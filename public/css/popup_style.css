@@ -1,0 +1,35 @@
+/*
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic);
+body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #666;}
+*/
+
+#lean_overlay {
+    position:absolute;
+    z-index:1000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+
+.popupContainer{
+	position:fixed;
+	width:40%;
+	height: auto;
+	left:40% !important;
+	top:15% !important;
+	background: #FFF;
+	padding:0px 0px 0px 0px;
+}
+
+#modal_trigger {}
+
+/* Popup Styles*/
+.popupHeader {font-size:1.1em; text-transform: uppercase;}
+.popupHeader {background:#F4F4F2; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; right: 0; top:0; padding:10px 15px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:1.1em;}
+
+/*.popupBody {padding:20px;}*/
