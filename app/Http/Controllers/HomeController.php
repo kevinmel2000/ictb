@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ApplicationType;
+use App\Theme;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $applicationType = ApplicationType::all();
+        $themes = Theme::all();
+        return view('home',compact("applicationType", "themes"));
     }
+
+
 }

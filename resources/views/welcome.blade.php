@@ -255,11 +255,10 @@
                                                                 <div class="row">
                                                                     <div class="twelve columns">
                                                                         <p class="text-center">
-                                                                            <span style="font-size:1.3em; color:#FF0">2<sup>nd</sup> International Conference on Tropical Biology</span><br>
-                                                                            Theme: "Ecological Restoration in Southeast Asia: Challenges, Gains, and Future 
-                                                                            Directions"
+                                                                            <span style="font-size:1.3em; color:#FF0">3<sup>rd</sup> International Conference on Tropical Biology</span><br>
+                                                                            Theme: "Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna"
 
-                                                                            <div style=" text-align:center; color:#FF0; font-weight:bold">October 12-13, 2015</div>
+                                                                            <div style=" text-align:center; color:#FF0; font-weight:bold">September 24 - 25, 2015</div>
                                                                             <div style=" text-align:center; color:#FF0; font-weight:bold">SEAMEO BIOTROP Convention Hall, Jl. Raya Tajur Km. 6, Bogor, Indonesia</div>
                                                                         </p>
                                                                     </div>

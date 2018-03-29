@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/checkmail', 'AJAXController@checkmail')->name('checkmail');
+Route::post('/checksubtheme', 'AJAXController@checksubtheme')->name('checksubtheme');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
