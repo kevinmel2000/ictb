@@ -27,4 +27,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function participantType()
+    {
+        return $this->belongsTo('App\ParticipantType', 'type_participant_id');
+    }
+
+    public function application(){
+     return $this->hasOne('App\Application', 'participant_id');   
+    }
 }

@@ -949,7 +949,7 @@ a:focus { outline: none }
 
 .smoothborder, smoothborder1, smoothborder2, smoothborder3, smoothborder4 { border: 1px solid #CCC;}
 input:-moz-read-only { /* For Firefox */
-    background-color: yellow;
+    background-color: #32CD32;
 }
 
 input:read-only { 

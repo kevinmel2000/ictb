@@ -3,10 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use App\Organization;
-use App\Country;
+
 use App\ParticipantType;
-use App\Title;
+
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -53,14 +52,8 @@ class RegisterController extends Controller
     public function showRegistrationForm()
     {
         $participantType = ParticipantType::all();
-        $organizationType = Organization::all();
-        $countries = Country::orderBy('country_name', 'asc')->get();
-        $titles = Title::all();
-        return view("auth.register", compact("participantType", "organizationType", "countries", "titles"));
+         return view("auth.register", compact("participantType"));
     }
-
-
-
 
     /**
      * Get a validator for an incoming registration request.
@@ -110,14 +103,11 @@ class RegisterController extends Controller
             'firstname' => $data['fname'],
             'lastname' => $data['lname'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'organization' => $data['organi'],
-            'type_organization_id' => $data['typeorga'],
-            'type_title_id' => $data['title'],
-            'countries_id' => $data['country'],
+            'password' => Hash::make($data['password']),   
             'type_participant_id' => $data['typeparti'],
         ]);
     }
+
 
 
     public function checkmail(Request $request)

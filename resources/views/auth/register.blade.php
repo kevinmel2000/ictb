@@ -65,6 +65,18 @@
                             <div class="five columns">
                                
 
+                                <label>Type of Participant</label>
+
+                                <div class="row collapse">
+                                    <div class="twelve columns">
+                                        <select name="typeparti">
+                                            @foreach ($participantType as $pt)
+                                            <option value="{{ $pt->id }}" selected>{{ $pt->type }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <label>First name</label>
                                 <div class="row collapse">
                                     <div class="twelve columns">
@@ -100,70 +112,11 @@
                                         <input type="password" data-rule-equalTo="#password" id="password_confirmation" name="password_confirmation" placeholder="password" class="smoothborder" required/>
                                     </div>
                                 </div>
-                        </div>
-                        <div class="six columns">
-                            <label>Organization</label>
-                                <div class="row collapse">
-                                    <div class="twelve columns">
-                                        <input type="text" name="organi" class="smoothborder"  placeholder="Organization" required value="{{ old('organi') }}"/>
-                                    </div>
-                                </div>
+                                  <label>Type the following: </label> {!! captcha_img() !!}
+                                <p><input type="text" name="captcha"></p>
+                                <input type="submit" id="submit" class="readmore" value="Submit">
 
-                                <label>Organization type</label>
-                                <div class="row collapse">
-                                    <div class="twelve columns">
-                                        <select name="typeorga">
-                                            @foreach ($organizationType as $org)
-                                            <option value="{{ $org->id }}">{{ $org->type }}</option>
-                                            @endforeach
-                                        </select>
-
-                                    </div>
-                                </div>
-
-                                <label>Title</label>
-                                <div class="row collapse">
-
-                                    <div class="twelve columns">
-                                        <select name="title" class="form-control">
-                                            @foreach ($titles as $title)
-                                            <option value="{{ $title->id }}">{{ $title->title }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-
-                                </div>
-
-                                <label>Country</label>
-                                <div class="row collapse">
-
-                                    <div class="twelve columns">
-                                        <select name="country">
-                                            @foreach ($countries as $country)
-                                            @if($country->id == 1)
-                                            <option value="{{ $country->id }}" selected>{{ $country->country_name }}</option>
-                                            @else
-                                            <option value="{{ $country->id }}">{{ $country->country_name }}</option>
-                                            @endif
-                                            @endforeach
-                                        </select>
-
-                                    </div>
-                                </div>
-
-
-                                <label>Type of Participant</label>
-
-                                <div class="row collapse">
-                                    <div class="twelve columns">
-                                        <select name="typeparti">
-                                            @foreach ($participantType as $pt)
-                                            <option value="{{ $pt->id }}" selected>{{ $pt->type }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                </div>
-
+                                
                                 <div class="row">
                                     <div class="six columns">
                                         <p>
@@ -171,18 +124,14 @@
                                         </p>
                                     </div>
                                 </div>
-                                 <label>Type the following: </label> {!! captcha_img() !!}
-                                <p><input type="text" name="captcha"></p>
-                                <input type="submit" id="submit" class="readmore" value="Submit">
+                               
+                        </div>
+                        <div class="six columns">
+                      
                             </form>
-                        </div>
-                        <div class="row">
-                            <div class="six columns">
-                                <p>
 
-                                </p>
-                            </div>
                         </div>
+                       
                     </fieldset>
 
                 </div>
@@ -220,8 +169,6 @@
             }, fname: {
                 required: true,
             }, lname: {
-                required: true,
-            }, organi: {
                 required: true,
             }, password: {
                 required: true,

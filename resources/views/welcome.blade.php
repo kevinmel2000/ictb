@@ -57,82 +57,7 @@
                                     </div>
 
                                 </li>
-                                <li>
-                                    <img src="{{ asset('images/slideshow/large/pic2.jpg') }}" alt="image02" class="responsiveslide">
-                                    <div class="ei-title">
-                                        <h2>
-                                            <font color="black">
-                                                Thank you for your participation<br/>
-                                                See you again at the next ICTB!!
-                                            </font>
-                                        </h2>
-
-                                        <h3>
-                                            <span style="font-size:0.8em;">Contact Information:<br>
-                                                Secretariat<br></span>
-                                                <span style="font-size:0.7em;">E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br>
-                                                Tel: +62-251-8323848, Fax: +62-251-8326851</span>
-                                            </h3>
-                                        </div>
-
-                                    </li>
-
-                                    <li>
-                                        <img src="{{ asset('images/slideshow/large/pic3.jpg') }}" alt="image03" class="responsiveslide">
-                                        <div class="ei-title">
-                                            <h2>
-                                                <font color="black">
-                                                    Thank you for your participation<br/>
-                                                    See you again at the next ICTB!!
-                                                </font>
-                                            </h2>
-
-                                            <h3>
-                                                <span style="font-size:0.8em;">Contact Information:<br>
-                                                    Secretariat<br></span>
-                                                    <span style="font-size:0.7em;">E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br>
-                                                    Tel: +62-251-8323848, Fax: +62-251-8326851</span>
-                                                </h3>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <img src="{{ asset('images/slideshow/large/pic4.jpg') }}" alt="image04" class="responsiveslide">
-                                            <div class="ei-title">
-                                                <h2>
-                                                    <font color="black">
-                                                        Thank you for your participation<br/>
-                                                        See you again at the next ICTB!!
-                                                    </font>
-                                                </h2>
-
-                                                <h3>
-                                                    <span style="font-size:0.8em;">Contact Information:<br>
-                                                        Secretariat<br></span>
-                                                        <span style="font-size:0.7em;">E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br>
-                                                        Tel: +62-251-8323848, Fax: +62-251-8326851</span>
-                                                    </h3>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <img src="{{ asset('images/slideshow/large/pic5.jpg') }}" alt="image05" class="responsiveslide">
-                                                <div class="ei-title">
-                                                    <h2>
-                                                        <font color="black">
-                                                            Thank you for your participation<br/>
-                                                            See you again at the next ICTB!!
-                                                        </font>
-                                                    </h2>
-                                                    <h3>
-                                                        <span style="font-size:0.8em;">Contact Information:<br>
-                                                            Secretariat<br></span>
-                                                            <span style="font-size:0.7em;">E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br>
-                                                            Tel: +62-251-8323848, Fax: +62-251-8326851</span>
-                                                        </h3>
-                                                    </div>
-
-                                                </li>
+                    
                                                 <li>
                                                     <img src="{{ asset('images/slideshow/large/pic6.jpg') }}" alt="image06" class="responsiveslide">
                                                     <div class="ei-title">
@@ -226,27 +151,7 @@
                                                                     </li>
 
                                                                 </ul>
-                                                                <!-- slider-thumbs -->
-                                                                <ul class="ei-slider-thumbs">
-                                                                    <li class="ei-slider-element">Current</li>
-
-                                                                    <li><a href="#">Slide 1</a><img src="{{ asset('images/slideshow/thumbs/pic1.jpg') }}" class="slideshowthumb" alt="thumb01"/>
-                                                                    </li>
-                                                                    <li><a href="#">Slide 2</a><img src="{{ asset('images/slideshow/thumbs/pic2.jpg') }}" class="slideshowthumb" alt="thumb02"/></li>
-
-                                                                    <li><a href="#">Slide 3</a><img src="{{ asset('images/slideshow/thumbs/pic3.jpg') }}" class="slideshowthumb" alt="thumb03"/></li>
-
-                                                                    <li><a href="#">Slide 4</a><img src="{{ asset('images/slideshow/thumbs/pic4.jpg') }}" class="slideshowthumb" alt="thumb04"/></li>
-                                                                    <li><a href="#">Slide 5</a><img src="{{ asset('images/slideshow/thumbs/pic5.jpg') }}" class="slideshowthumb" alt="thumb05"/></li>
-                                                                    <li><a href="#">Slide 6</a><img src="{{ asset('images/slideshow/thumbs/pic6.jpg') }}" class="slideshowthumb" alt="thumb06"/></li>
-                                                                    <li><a href="#">Slide 7</a><img src="{{ asset('images/slideshow/thumbs/pic7.jpg') }}" class="slideshowthumb" alt="thumb07"/></li>
-
-                                                                    <li><a href="#">Slide 8</a><img src="{{ asset('images/slideshow/thumbs/pic8.jpg') }}" class="slideshowthumb" alt="thumb08"/></li>       
-                                                                    <li><a href="#">Slide 9</a><img src="{{ asset('images/slideshow/thumbs/pic9.jpg') }}" class="slideshowthumb" alt="thumb09"/></li>
-
-                                                                    <li><a href="#">Slide 10</a><img src="{{ asset('images/slideshow/thumbs/pic10.jp') }}g" class="slideshowthumb" alt="thumb10"/></li>
-
-                                                                </ul>   
+                                                  
                                                             </div>
                                                             <div class="minipause">
                                                             </div>
