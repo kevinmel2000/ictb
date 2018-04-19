@@ -347,9 +347,13 @@ tr:first-child>td>.fc-day-grid-event{
     background:#000;
     opacity:.25
 }
-.fc-day-grid-event .fc-content{
-    white-space:nowrap;
-    overflow:hidden
+.fc-day-grid-event > .fc-content {
+   white-space: normal;
+   text-overflow: ellipsis;
+   max-height:20px;
+}
+.fc-day-grid-event > .fc-content:hover {
+   max-height:none!important; 
 }
 .fc-day-grid-event .fc-time{
     font-weight:700
@@ -559,9 +563,11 @@ a.fc-more:hover{
     z-index:5
 }
 .fc-view-container *,.fc-view-container :after,.fc-view-container :before{
+    color: #fff;
     -webkit-box-sizing:content-box;
     -moz-box-sizing:content-box;
-    box-sizing:content-box
+    box-sizing:content-box;
+
 }
 .fc-view,.fc-view>table{
     position:relative;
@@ -572,6 +578,10 @@ a.fc-more:hover{
 }
 .fc-basic-view .fc-body .fc-row{
     min-height:4em
+}
+
+.fc-day-header span{
+    color: black;
 }
 .fc-row.fc-rigid .fc-content-skeleton{
     position:absolute;
@@ -589,6 +599,7 @@ a.fc-more:hover{
     padding:0 2px
 }
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number{
+    color: black;
     float:right
 }
 .fc-rtl .fc-basic-view .fc-day-top .fc-day-number{

@@ -1,145 +1,154 @@
-@extends('layouts.web')
+@extends('layouts.newweb')
 
 
 @section('content')
-<!-- SUBHEADER
-================================================== -->
-<div id="subheader">
-    <div class="row">
-        <div class="twelve columns">
-            <p class="left">
-                 ABOUT THE CONFERENCE
-            </p>
-            <p class="left">
-            {if $smarty.session.login}
-            <div class="welcomeuser">Welcome: {$cms.login_name} | <a class="readmore1" href="index.php?mode=logout&id={$smarty.session.uid}">Logout</a></div>
-            {/if}
-            </p>
-        </div>
+
+<section id="page-title">
+    <div class="container clearfix">
+        <h1>About the Conference</h1>
+        
     </div>
-</div>
-<!-- CONTENT 
-================================================== -->
-<div class="background_content">
-<div class="hr">
-</div>
+</section>
 
-<div class="row">
-    <!-- MAIN CONTENT-->
-    <div class="twelve columns">
-        <!-- Our History-->
-        <div class="sectiontitle">
-            <h4>Introduction</h4>
+<section id="content">
+    <div class="content-wrap">
+        <div class="section notopborder nomargin header-stick">
+            <div class="container clearfix">
+                <div class="fancy-title title-double-border">
+                    <h1><span>Introduction</span></h1>
+                </div>
+                <h3>Rationale</h3>
+                <p align="justify"><span class="dropcap">C</span>onservation and sustainable use of flora and fauna remain an important global concern until now.  The expanding consumption patterns for food, shelter and other needs by the steadily growing world’s human population continues to contribute to reducing the number and genetic diversity of plants and animals. Despite the internationally agreed framework for the conservation and sustainable use of flora and fauna diversity and natural resources and the criteria for access and benefit sharing under the Convention on Biological Diversity,  Asia continues to be one of the world's largest consumers of wildlife, wildlife products and other natural resources.</p> 
+
+                <p align="justify">Southeast Asia is known to have three of the world’s 17 mega-diverse countries (i.e., Indonesia, Malaysia and the Philippines) and seven of the world’s 35 recognized biodiversity hotspots based on the International Union for Conservation of Nature (IUCN) category. The region is also recognized to have a high rate of species discovery throughout the past twenty years. But the region’s biodiversity is still under serious threat due to rapid habitat loss caused by rampant deforestation for agricultural purposes and massive infrastructure development. Unregulated collection and trafficking of native plants and animals for trade also contribute to this threat.</p>
+
+                <p align="justify">Where country-level regulatory mechanisms are not strongly implemented and overexploitation of indigenous flora and fauna are rewarded with large monetary gains, continuing research, education and information exchange could provide a reliable mechanism to forge ahead with discovering effective ways and best practices to conserve and use natural resources sustainably for the future.</p>   
+
+                <p align="justify">Indigenous people and communities in various countries of the region have been known to support biodiversity conservation efforts through their own traditional wisdom and practices. Scientists as well as environmental advocates have also been finding ways to help address biodiversity and sustainable development issues. Research activities on genetic improvement have been on-going in many tropical countries to enable indigenous tropical flora and fauna species adapt to changing climatic and habitat conditions resulting from both natural and anthropological causes. These traditional wisdom and practices as well as scientific research results are significant inputs to developing, and implementing effective and continuous national comprehensive programs and policies in conserving, enhancing and sustainable use of the region’s flora and fauna and its ecosystem. However, close coordination mechanisms among national governments and stakeholders including indigenous people,  academic institutions, and advocacy groups are highly wanting.</p> 
+
+                <p align="justify">The SEAMEO Regional Centre for Tropical Biology (BIOTROP) is organizing its 3rd International Conference on Tropical Biology (ICTB) this year with the theme “Conservation, Enhancement, and Sustainable Use of Indigenous Tropical Flora and Fauna”.  The conference is expected to be a venue for sharing knoweldge, perspectives, and experiences on the theme among the participants.</p>
+
+                <h3>Objectives</h3>
+
+                <p align="justify"><span class="dropcap">T</span>he conference generally aims to assess successes, opportunities, and gaps in current practices, research efforts and policies associated with the conservation, enhancement and sustainable use of flora and fauna in Southeast Asia.</p>
+                
+                <p align="justify">Specifically, it hopes to generate consensus among participants to formulate practical and sustainable ways, based on current policies and research results, to strengthen participation and contribution of stakeholders in eliminating currents problems and, at the same time, enhancing the conservation and sustainable use of the region’s biodiversity and natural resources.</p>
+
+                <h3>Expected <span>Outputs</span></h3>
+                <p align="justify">The conference is expected to bring about consensus among the participants on an agenda for future research and advocacy actions on the conservation, enhancement and sustainable use of indigenous flora and fauna in Southeast Asia to support the effective implementation of existing national policies. This will be contained in the conference report  including the highlights of session paper presentations and discussions that SEAMEO BIOTROP will publish.</p>
+                
+                <p align="justify">Papers presented during the Conference, which would pass SEAMEO BIOTROP’s external review process, would be published in its  Scopus indexed international journal, BIOTROPIA.</p>
+
+                <div class="divider"><i class="icon-circle"></i></div>
+
+                <div class="fancy-title title-double-border">
+                    <h1><span>Organizing Committee</span></h1>
+                </div>
+
+                <div class="title-block">
+                   <div class="row clearfix">
+                    <div class="col-md-6">
+                        <h4>Conference Coordinator</h4>
+                        <span>
+                            Dr. Maria Ulfah<br/>
+                            Anidah, S.Si<br/>
+                        </span>
+                        <br/>
+                        <h4>Program and Reception</h4>
+                        <span>
+                            Dewi Suryani, MM<br/>
+                            Slamet Widodo Sugiarto, S.Si<br/>
+                            Armaiki Yusmur, M.Si<br/>
+                            Rizkia Tirtani<br/>
+                            Saiful Bachri, S.Si.<br/>
+                            Ryna M. Siahaan, S.Si.<br/>
+                            Dewanti Pratiwi, S.Hut.<br/>
+                            Devi Septrianti, S.E.<br/>
+                        </span>
+                        <br/>
+                        <h4>Invitation, Registration and Secretariat</h4>
+                        <span>
+                            Sri I. Soerianegara, M.Sc.<br/>
+                            Lidia Defita, S.Kom.<br/>
+                            Risa Rosita, S.Si.<br/>
+                            Yunita, S.P<br/>
+                            Yuni Puspita Sari, M.M.<br/>
+                            Deki Zulkarnain, S.Sos.<br/>
+                        </span>
+                        <br/>
+                        <h4>Sponsorship & Exhibits</h4>
+                        <span>
+                            Ir. Sri Widayanti M.Si.<br/>
+                            Harry Imantho, M.Sc.<br/>
+                            Erina Sulistiani, M.Si.<br/>
+                            Samsul A.Yani, S.Si.<br/>
+                            Budi Cahyadi, S.Si.<br/>
+                            Riana Hartati, S.Si.<br/>
+                            Asep Saepudin<br/>
+                            Dani Yudi, A.Md.<br/>
+                            Lillys Betty Yuliawati, S.Si<br/>
+                        </span>
+                        <br/>
+                        <h4>Promotion</h4>
+                        <span>
+                            Woro Kanti Darmastuti, M.Si.<br/>
+                            Dani Yudi Trisna, A.Md.<br/>
+                            Haritz Cahya Nugraha, M.T.<br/>
+                            Indra Septian, A.Md.<br/>
+                            Aan Darwati, A.Md.<br/>
+                            Yadi Supriadi<br/>
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Publication & Documentation</h4>
+                        <span>
+                            Tika Tresnowati, M.Si.<br/>
+                            Zanne Sandriati Putri, S.Si.<br/>
+                            Asep Saepudin<br/>
+                            Ulfah Zul Farisa, S.Hut.<br/>
+                            Indah Wahyuni, M.Si.<br/>
+                            Dewi Rahmawati, M.Si.<br/>
+                            Nijma Nurfadila, S.Si.<br/>
+                            Trijanti A. Widinni A., M.Si.<br/>
+                        </span>
+                        <br/>
+                        <h4>Audio-Visual, General Logistics & Transportation</h4>
+                        <span>
+                            Asep Syaefudin, S.E.<br/>
+                            Riza Fadli Assegaf<br/>
+                            Lukman Haris, S.Si<br/>
+                            Haritz Cahya Nugraha, M.T.<br/>
+                            Agus Sujadi<br/>
+                            Lastiah<br/>
+                            Alfi Dwi Nugroho, A.Md.<br/>
+                            Fitri Junaedy, S.E.I.<br/>
+                            Citra Ardiana, S.T.<br/>
+                            Taopik Rokayat<br/>
+                            Didit Trisnadi<br/>
+                        </span>
+                        <br/>
+                         <h4>Finance</h4>
+                        <span>
+                           Herman Apriyadi, SE.<br/>
+                           Ira Mutiara S.E.<br/>
+                           Peri Siantuni<br/>
+                        </span>
+                        <br/>
+                        <h4>Food</h4>
+                        <span>
+                           Wati Madyawati<br/>
+                           Herni widhiastuti, S.Si.<br/>
+                           Manik Hasri, S.H.<br/>
+                           Wheni Haslinawati, M.Biotech.<br/>
+                        </span>
+                        <br/>
+                    </div>
+                </div>
+                </div>
+
+            </div>
         </div>
-      <h5>Rationale</h5>
-        <p>
-             The economic value of intact, fully functioning ecosystems, as providers of both natural products and environmental services, is now well established. However, once they become degraded, the stream of benefits flowing from such kind of ecosystems is considerably reduced often for long periods since natural regeneration is slow and restoration is both expensive and time-consuming.      </p>
-        <p>
-          The recent rapid economic development of most Asian countries, particularly in Southeast Asia, has been considered impressive but it has been achieved at the expense of the environment, undermining delivery of natural products and ecosystem services.  A 2012 working paper by the Asian Development Bank Institute reported that Asia is “confronted by serious environmental problems that threaten to undermine future growth, food security, and regional stability.”  The region now faces the “prospect of a dwindling supply of environmental capital to support the growing demands of a rapidly growing and urbanized population.”
-      </p>
-        <p>
-          Aside from rapid population growth, ecosystem degradation is caused by various factors including increasing market demands for forest products, over cultivation of agricultural lands, poor governance, etc. In its 2011 report, the Food and Agriculture Organization estimated that about 40 percent of land in two-thirds of ASEAN nations (excluding Singapore) suffers from either severe or very severe degradation due to human activities.   Thus, ASEAN countries already recognize the importance of effectively implementing policies for environmentally sustainable growth (ASEAN 2007).  
-</p>
-      <p>
-          The science and practice of ecological restoration could have a significant impact on the abovementioned problems as it improves natural resources management and biodiversity conservation, encourages use of traditional ecological knowledge, enhances climate change mitigation and adaptation, and builds sustainable livelihoods. It is becoming increasingly important worldwide as a way to regain the integrity of ecosystems while simultaneously enhancing human welfare.</p>
-        <p>
-Globally, several past ecological restoration schemes by governments and nongovernmental organizations have been successful.  Lessons learned from these experiences are critical for redefining environmental policies, determining and prioritizing research needs, and charting concerted efforts from all sectors of society towards a sustainable and integrated development of the ASEAN region. </p>
-
-<h5>Objective</h5>
-        <p>The Conference will provide a forum for scientists and practitioners to share useful lessons, address challenges, and generate commitments to strengthen policy decisions and work collaboratively towards ecological restoration for sustainable and integrated regional development in Southeast Asia along global biodiversity and other conservation goals.</p>
-
-<h5>Expected Output</h5>
-        <p>The quorum of conference participants will identify gaps in our knowledge of restoration and identify new approaches to both policies and practices that will form an agenda to guide the future direction of research and development in this field.</p>
-
-<div class="hr">
-</div>
-<div class="panel" id="org_committee">    
-    <div class="row">
-        <div class="twelve columns">
-            <h5>Organizing Committee</h5>
-            <hr>
-        </div>
+     
     </div>
-    
-    <div class="row">
-
-    <div class="six columns">
-        <p>
-    <h6>Conference Coordinators</h6>
-    Dr. Ellyn K. Damayanti (Technical Coordinator)<br>
-    Dr. Dewi Wulandari (Resource Management Coordinator)<br>
-    </p>
-
-            <p>
-                <h6>Program and Reception</h6>
-                Dewi Suryani, MM. (<i>Team Leader</i>)<br>
-        Slamet Widodo Sugiarto, S.Si.<br>
-                Armaiki Yusmur, S.Si.<br>
-                Rizkia Tirtani<br>
-                Anidah, S.Si<br>
-        Ryna<br>
-        Saiful Bachri, S.Si<br>
-                
-                <h6>Promotion & Exhibition</h6>
-                Ir. Sri Widayanti (<i>Team Leader</i>)<br>
-                Woro Kanti Darmastuti, M.Si<br>
-                Aan Darwati, A.Md.<br>
-                Rizkia Tirtani<br>
-        Dani Yudi Trisna, AMd<br>
-                
-                <h6>Invitation, registration, and Secretariat</h6>
-                Lidia Defita, S.Kom. (<i>Team Leader</i>)<br>
-                Dewanti Pratiwi, S.Hut.<br>
-                Risa Rosita, S.Si.<br>
-                Yunita, SP.<br>
-                Kania Dewi Rahayu, S.Si.<br>
-                
-                <h6>Audio-visual & General Logistics</h6>
-                Alfi Dwi Nugroho, A.Md (<i>Team Leader</i>)<br>
-                Riza Fadli Assegaf<br>
-                Lukman Haris, S.Si<br>
-            </p>
-        </div>
-    
-        <div class="six columns">
-            <p>
-                <h6>Documentation and Proceedings</h6>
-        Tika Tresnowati, M.Si. (<i>Team Leader</i>)<br>
-                Sri Ismawati Soerianegara, M.Sc.<br>
-                Maya Masita Novianti, M.Si.<br>
-                Asep Saepudin<br>
-                Dr. Dewi Wulandari<br>
-                Dr. Ellyn K. Damayanti<br>
-        Indah, S.Si<br>
-        Nijma Nurfadila, S.Si<br>
-        Siti Sulastri Rangkuty, S.Si<br>
-        Syifa, S.Si<br>
-        Saiful Bachri, S.Si<br>
-        Perry Siantuni<br>
-        Haritz Cahya Nugraha, S.ST<br>
-                
-                <h6>Finance</h6>
-                Herman Apriyadi, SE (<i>Team Leader</i>)<br>
-                Ira Mutiara<br>
-                
-                <h6>Food and Accommodation</h6>
-                Hj. Wati Madyawati (<i>Team Leader</i>)<br>
-                Tenny Wahyuni, A.Md<br>
-                Riana Hartati, S.Si.<br>
-                
-                <h6>Transportation</h6>
-                Fitri Junaedy, SEI (<i>Team Leader</i>)<br>
-                Drs. Arman R. Haryono<br>
-                Kuswandi<br>
-            </p>
-        </div>
-    </div>
-    
-      
-</div>
-</div><!-- end main content-->
-</div>
-
-<div class="hr">
-</div>
+</section>
 @endsection

@@ -1,162 +1,100 @@
-@extends('layouts.web')
+@extends('layouts.newweb')
 
 
 @section('content')
-<!-- SUBHEADER
-================================================== -->
-<div id="subheader">
-    <div class="row">
-        <div class="twelve columns">
-            <p class="left">
-                 SUB THEMES AND TOPICS
-            </p>
-            <p class="left">
-            {if $smarty.session.login}
-            <div class="welcomeuser">Welcome: {$cms.login_name} | <a class="readmore1" href="index.php?mode=logout&id={$smarty.session.uid}">Logout</a></div>
-            {/if}
-            </p>
-        </div>
-    </div>
-</div>
 
-
-<div class="background_content">
-<div class="hr">
-</div>
-<!-- CONTENT 
-================================================== -->
-<div class="row">
-    <!-- MAIN CONTENT-->
-    <div class="twelve columns">
-        <!-- Our History-->
-        <div class="sectiontitle">
-            <h4>Sub Themes and Topics</h4>
-        </div>
-
-
-        <!-- TABLES-->
-        <table>
-            <thead>
-            <tr>
-                <th>
-                </th>
-                <th>
-                    Sub Themes
-                </th>
-                <th>
-                    Topics
-                </th>
-              </tr>
-            </thead>
-            
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>
-                    Approaches, Techniques and Innovations in Ecological Restoration
-                </td>
-                <td>
-                <ul class="circle">
-                    <li>Restoration in parks and protected areas</li>
-                    <li>Restoration in Agro-ecological and silvicultural systems</li>
-                    <li>Restoration in an urban context</li>
-                    <li>Restoration in mined areas</li>
-                    <li>Community and Landscape Scale Restoration</li>
-                </ul>
-                </td>
-              </tr>
-
-            <tr>
-                <td>2</td>
-                <td>
-                
-                    Socio-economic, Cultural and Ethical Dimensions of Ecological Restoration
-                </td>
-                <td>
-                <ul class="circle">
-                    <li>Traditional ecological knowledge and community-based restoration</li>
-                    <li>Monitoring and adaptive management</li>
-                </ul>
-                </td>
-              </tr>
-
-            <tr>
-                <td>3</td>
-                <td>
-                Ecological Restoration, Biodiversity, and Climate Change
-                </td>
-                <td>
-                <ul class="circle">
-                    <li>Threatened and endangered species, populations and habitats</li>
-                    <li>Invasive species management</li>
-                    <li>The role of restoration in mitigating and adapting to climate change</li>
-                </ul> 
-                </td>
-              </tr>
-
-            <tr>
-                <td>4</td>
-                <td>
-                    Ecological restoration policies and other legal frameworks 
-                </td>
-                <td>
-                <ul class="circle">
-                    <li>Planning and decision-making frameworks on ecological restoration</li>
-                    <li>Effectivity & efficiency of policies and legal frameworks on ecological restoration</li>
-                    <li>Science and policy interactions in determining ecological restoration options</li>
-                </ul> 
-                </td>
-              </tr>
-             
-            </tbody>
-
-        </table>
-
-<div class="hr">
-</div>
-
-<div class="panel">
-    
-    <div class="row">
-        <div class="twelve columns">
-            <h5>Steering Committee</h5>
-            <hr>
-         <p>
-            Dr. Irdika Mansur (SEAMEO BIOTROP Director)<br>
-            Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br>
-            Dr. Arief Sabdo Yuwono (SEAMEO BIOTROP Deputy Director for Resource Management)<br>
-        </p>
-
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="twelve columns">
-            <h5>Scientific Committee</h5>
-            <hr>
-         <p>
-            Dr. Chongrak Wachrinrat (SEAMEO BIOTROP Governing Board Member from THAILAND)<br>
-            Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br>
-            Dr. Ellyn K. Damayanti (BIOTROP Program Thrust Coordinator for Tropical Biology for Community Welfare)<br>
-            Dr. Dewi Wulandari  (BIOTROP Program Thrust Coordinator for  Tropical Biology for Environmental Integrity)<br>
-            Dr. Steven Elliot (Director of Forest Restoration Research Unit, Chiangmai University)<br>
-            Dr. Ryo Kohsaka (International Union of Forest Research Organization (IUFRO) Research Group  6.10.00 Rural Development Member from Kanazawa University, Japan)<br>
-            Ms. Tanja Kahkonen, M.Sc. (IUFRO Research Group 6.10.00 Rural Development Member from University of Eastern Finland, Finland)<br>
-            Ms. Ana Elia R. Hidalgo, M.Sc. (IUFRO Research Group 6.10.00 Rural Development Member from University of British Columbia, Canada)<br>
-        Mr. Solichin Manuri, M.Sc. (Australian National University, Australia)<br>
-        </p>
-
-        </div>
-    </div>
-    
-      
-</div>
-
+<section id="page-title">
+    <div class="container clearfix">
+        <h1>Subthemes and Topic</h1>
         
+    </div>
+</section>
 
-</div><!-- end main content-->
-</div>
+<section id="content">
+    <div class="content-wrap">
+        <div class="section notopborder nomargin header-stick">
+            <div class="container clearfix">
 
-<div class="hr">
+
+                <p align="justify">The Conference theme, “Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna”, will cover the following sub-themes and topics:</p> 
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-2">1.  Diversity and Resiliency of Indigenous Tropical Flora and Fauna and Their Ecosystems</h4>
+                        </div>
+                        <p class="mb-1">
+                            a.  Diversity and Resiliency of Species and Ecosystems<br/>
+                            b.  Threatened and Endangered Species, Population, and Habitat<br/>
+                            c.  Genetic Diversity Assessment for Conservation of Species<br/>
+                        </p>
+                        
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-2">2. Approaches, Technologies, and Innovations in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna</h4>
+                        
+                        </div>
+                        <p class="mb-1">
+                            a.  Current Indigenous Flora and Fauna Biodiversity Conservation and Management Approaches and Practices<br/>
+                            b.  Current Technologlies for Sustainable Indigenous Tropical Flora and Fauna Biodiversity Utilization and Enhancement<br/>
+                            c.  Emerging Trends and Innovations in Conservation, Enhancement and Sustainable Use of Indigenous Flora and Fauna<br/>
+                        </p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-2">3. Socio-economic, Cultural, and Ethical Aspects in Conservation, Enhancement and Sustainable Use of Indigenous Flora and Fauna</h4>
+                        </div>
+                        <p class="mb-1">
+                            a. Traditional Knowledge and Community-based Conservation<br/>
+                            b. Indigenous Tropical Flora and Fauna Biodiversity in Trade<br/>
+                            c. Business and Sustainable Landscape<br/>
+                            d. Financing of Biodiversity and Its Ecosystem<br/>
+                        </p>
+                    </a>
+                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-2">4. Policies and Other Legal Frameworks in Conservation and Sustainable Use of Indigenous Flora and Fauna</h4>
+                        </div>
+                        <p class="mb-1">
+                            a. Agenda on Conservation and Utilization of Indigenous Tropical Flora and Fauna<br/>
+                            b. Effectiveness and Efficiency of Policies and Legal Frameworks on Conserving Indigenous Tropical Flora and Fauna and Their Ecosystem<br/>
+                            c. Science and Policy Linkage in Determining Conservation and Sustainable Use of Indigenous Tropical Flora and Fauna<br/>
+
+                        </p>
+                    </a>
+                </div>
+
+                <div class="divider"><i class="icon-circle"></i></div>
+
+                <div class="title-block">
+               
+                <div class="fancy-title title-double-border">
+                    <h4><span>Steering Committee</span></h4>
+                </div>
+
+                        <span>
+                            Dr. Irdika Mansur (SEAMEO BIOTROP Director)<br/>
+                            Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br/>
+                            Dr. Zulhamsyah Imran (SEAMEO BIOTROP Deputy Director for Administration)<br/>
+                        </span>
+                        <br/><br/>
+                   <div class="fancy-title title-double-border">
+                    <h4><span>Scientific Committee</span></h4>
+                </div>
+
+                        <span>
+                            Dr. Irdika Mansur (SEAMEO BIOTROP Director)<br/>
+                            Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br/>
+                            Dr. Zulhamsyah Imran (SEAMEO BIOTROP Deputy Director for Administration)<br/>
+                        </span>
+                        
+             </div>
+         </div>
+
+     </div>
+ </div>
+
 </div>
+</section>
 @endsection

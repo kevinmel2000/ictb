@@ -20,28 +20,28 @@ Route::post('/checksubtheme', 'AJAXController@checksubtheme')->name('checksubthe
 Route::post('/storeapp', 'HomeController@storeApplication')->name('storeapp');
 Route::post('/storeinfo', 'HomeController@storeInfo')->name('storeinfo');
 Route::post('/updateinfo', 'HomeController@updateInfo')->name('updateinfo');
-
-Route::get('/about', 'HomeController@about')->name('about');
-Route::get('/speaker', 'HomeController@speaker')->name('speaker');
-Route::get('/theme', 'HomeController@theme')->name('theme');
-Route::get('/schedule', 'HomeController@schedule')->name('schedule');
-Route::get('/guideline', 'HomeController@guideline')->name('guideline');
-Route::get('/guidelineauthor', 'HomeController@guidelineauthor')->name('guidelineauthor');
-Route::get('/exhibition', 'HomeController@exhibition')->name('exhibition');
-Route::get('/venue', 'HomeController@venue')->name('venue');
-Route::get('/accomodation', 'HomeController@accomodation')->name('accomodation');
-
-
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/summary', 'HomeController@summary')->name('summary');
-
-
 
 Route::group(['middleware' => ['payment']], function () {
     Route::get('/application', 'HomeController@application')->name('application');
 	Route::get('/information', 'HomeController@information')->name('information');
 });
+
+
+Route::get('/about', 'PageController@about')->name('about');
+Route::get('/speaker', 'PageController@speaker')->name('speaker');
+Route::get('/theme', 'PageController@theme')->name('theme');
+Route::get('/schedule', 'PageController@schedule')->name('schedule');
+Route::get('/guideline', 'PageController@guideline')->name('guideline');
+Route::get('/guidelineauthor', 'PageController@guidelineauthor')->name('guidelineauthor');
+Route::get('/exhibition', 'PageController@exhibition')->name('exhibition');
+Route::get('/venue', 'PageController@venue')->name('venue');
+Route::get('/accomodation', 'PageController@accomodation')->name('accomodation');
+
+
+
+
 
 
 Route::get('/component/{name}', 'AJAXController@component')->name('component');
