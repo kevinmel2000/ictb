@@ -147,8 +147,8 @@
     @endsection
 
     @section('script')
-    <script type="text/javascript" src="{{asset('js/clone-form-td.js') }}"></script>
-    <script type="text/javascript" src="{{asset('js/jquery.validate.min.js') }}"></script>
+    <script type="text/javascript" src="{{asset('old/js/clone-form-td.js') }}"></script>
+    <script type="text/javascript" src="{{asset('old/js/jquery.validate.min.js') }}"></script>
     <script>
         $().ready(function() {
         // validate on keyup and submit

@@ -12,7 +12,7 @@
 
 <section id="content">
     <div class="content-wrap">
-        <div class="section notopborder nomargin header-stick">
+        
             <div class="container clearfix">
                 <div class="fancy-title title-double-border">
                     <h1><span>Introduction</span></h1>
@@ -146,7 +146,7 @@
                 </div>
                 </div>
 
-            </div>
+            
         </div>
      
     </div>

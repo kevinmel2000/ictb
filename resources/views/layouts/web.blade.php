@@ -9,21 +9,21 @@
 
 	<title>3rd International Conference on Tropical Biology</title>
 
-	<link rel="shortcut icon" href="{{ asset('images/biofavicon.gif') }}" />
-	<link rel="image_src" href="{{ asset('images/biofavicon.gif') }}" />
+	<link rel="shortcut icon" href="{{ asset('old/images/biofavicon.gif') }}" />
+	<link rel="image_src" href="{{ asset('old/images/biofavicon.gif') }}" />
 	<meta name="keywords" content="third seameo biotrop international conference on tropical biology, biotrop third international conference, tropical biology, konferensi internasional biotrop"/>
 	<meta name="description" content="Official Website Third SEAMEO BIOTROP International Conference on Tropical Biology">
 	<!-- CSS Files-->
-	<link rel="shortcut icon" href="{{ asset('images/biofavicon.gif') }}" />
-	<link rel="image_src" href="{{ asset('images/biofavicon.gif') }}" />
-	<link rel="stylesheet" href="{{ asset('js/bootstrap/css/bootstrap-theme.min.css') }}">
+	<link rel="shortcut icon" href="{{ asset('old/images/biofavicon.gif') }}" />
+	<link rel="image_src" href="{{ asset('old/images/biofavicon.gif') }}" />
+	<link rel="stylesheet" href="{{ asset('old/js/bootstrap/css/bootstrap-theme.min.css') }}">
 
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/homepage.css') }}"><!-- homepage stylesheet -->
-	<link rel="stylesheet" href="{{ asset('css/skins/teal.css') }}"><!-- skin color -->
-	<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-	<link href='{{ asset('calendar/fullcalendar.css') }}' rel='stylesheet' />
-	<link href='{{ asset('calendar/lib/cupertino/jquery-ui.min.css') }}' rel='stylesheet' />
+	<link rel="stylesheet" href="{{ asset('old/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('old/css/homepage.css') }}"><!-- homepage stylesheet -->
+	<link rel="stylesheet" href="{{ asset('old/css/skins/teal.css') }}"><!-- skin color -->
+	<link rel="stylesheet" href="{{ asset('old/css/responsive.css') }}">
+	<link href='{{ asset('old/calendar/fullcalendar.css') }}' rel='stylesheet' />
+	<link href='{{ asset('old/calendar/lib/cupertino/jquery-ui.min.css') }}' rel='stylesheet' />
 
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.css">
 
@@ -59,7 +59,7 @@
 		<div class="row">	
 			<div class="three columns">
 				<div class="logo">
-					<a href="./"><img src="{{ asset('images/seameo_anniv.png') }}"/></a>
+					<a href="./"><img src="{{ asset('old/images/seameo_anniv.png') }}"/></a>
 				</div>
 			</div>
 			<div class="nine columns noleftmarg">		
@@ -137,10 +137,10 @@
 									<ul>
 										<li><a target="_blank" href="ftp://ftp.biotrop.org/International_Conference_on_Tropical_Biology_2015/">Presentation Files</a></li>
 										<li>
-											<a target="_blank" href="{{ asset('images/2nd ICTB_InfoKit.pdf') }}">Arrival info pack</a>
+											<a target="_blank" href="{{ asset('old/images/2nd ICTB_InfoKit.pdf') }}">Arrival info pack</a>
 										</li>
 										<li>
-											<a target="_blank" href="{{ asset('images/infopack_2nd_ictb_2015.pdf') }}">Information kit</a>
+											<a target="_blank" href="{{ asset('old/images/infopack_2nd_ictb_2015.pdf') }}">Information kit</a>
 										</li>
 
 									</ul>
@@ -203,24 +203,24 @@
 <!--
 <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
 -->
-<script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
-<script src="{{ asset('calendar/lib/jquery-ui.custom.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/foundation.min.js') }}"></script>  
-<script src="{{ asset('js/elasticslideshow.js') }}"></script>
-<script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
-<script src="{{ asset('js/jquery.cycle.js') }}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('old/js/jquery-1.11.2.min.js') }}"></script>
+<script src="{{ asset('old/calendar/lib/jquery-ui.custom.min.js') }}"></script>
+<script src="{{ asset('old/js/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('old/js/foundation.min.js') }}"></script>  
+<script src="{{ asset('old/js/elasticslideshow.js') }}"></script>
+<script src="{{ asset('old/js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ asset('old/js/jquery.cycle.js') }}"></script>
+<script src="{{ asset('old/js/app.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.0/js/vendor/modernizr.js"></script>
-<script src="{{ asset('js/slidepanel.js') }}"></script>
-<script src="{{ asset('js/scrolltotop.js') }}"></script>
-<script src="{{ asset('js/hoverIntent.js') }}"></script>
-<script src="{{ asset('js/superfish.js') }}"></script>
-<script src="{{ asset('js/responsivemenu.js') }}"></script>
-<script src="{{ asset('calendar/lib/moment.min.js') }}"></script>
-<script src="{{ asset('calendar/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('old/js/slidepanel.js') }}"></script>
+<script src="{{ asset('old/js/scrolltotop.js') }}"></script>
+<script src="{{ asset('old/js/hoverIntent.js') }}"></script>
+<script src="{{ asset('old/js/superfish.js') }}"></script>
+<script src="{{ asset('old/js/responsivemenu.js') }}"></script>
+<script src="{{ asset('old/calendar/lib/moment.min.js') }}"></script>
+<script src="{{ asset('old/calendar/fullcalendar.min.js') }}"></script>
 <script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
-<script src="{{ asset('js/jquery.anoslide.js') }}"></script>
+<script src="{{ asset('old/js/jquery.anoslide.js') }}"></script>
 @yield('script')
 
 </body>
