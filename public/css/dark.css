@@ -9,7 +9,7 @@
 .dark h3,
 .dark h4,
 .dark h5,
-.dark h6 { color: #EEE; }
+.dark h6 { color: #000; }
 
 .dark a:hover { color: #EEE; }
 
@@ -964,7 +964,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .heading-block.not-dark h3,
 .dark .heading-block.not-dark h4,
 .dark .emphasis-title.not-dark h1,
-.dark .emphasis-title.not-dark h2 { color: #333; }
+.dark .emphasis-title.not-dark h2 { color: #156524; }
 
 .dark .heading-block:not(.not-dark) > span { color: #EEE; }
 
