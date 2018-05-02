@@ -1,101 +1,75 @@
-@extends('layouts.web')
+@extends('layouts.newweb')
+
 
 
 @section('content')
-<!-- SUBHEADER
-================================================== -->
-<div id="subheader">
-    <div class="row">
-        <div class="twelve columns">
-            <p class="left">
-                 CONFERENCE VENUE
-            </p>
-            <p class="left">
-            {if $smarty.session.login}
-            <div class="welcomeuser">Welcome: {$cms.login_name} | <a class="readmore1" href="index.php?mode=logout&id={$smarty.session.uid}">Logout</a></div>
-            {/if}
-            </p>
-        </div>
-    </div>
-</div>
-<div class="background_content">
-<!-- CONTENT 
-================================================== -->
-<div class="row">
-        <div class="seven columns">
-            <h4>Venue:</h4>
-            <p>
-            <div class="" style="font-size:1.1em">
-            <strong>SEAMEO BIOTROP Convention Hall, Jl. Raya Tajur Km. 6, Bogor, Indonesia</strong>
-            </div>
-            </p>
-            <img src="templates/theme02/images/foto_biotrop.jpg" alt="BIOTROP"> 
-        </div>
-        {*
-        <div class="six columns">
-            <h4>Secretariat of SEAMEO BIOTROP 2<sup>nd</sup> International Conference on Tropical Biology</h4>
-            <p>
-            <div class="" style="font-size:1.1em">
-            <strong><a href="http://www.biotrop.org" title="SEAMEO BIOTROP" target="_blank">SEAMEO BIOTROP</a></strong><br />
-            Jl.Raya Tajur Km. 6 Bogor 16134, INDONESIA<br />
-            E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br />
-            Tel: +62-251-8323848<br />
-            Fax: +62-251-8326851<br />
-            </div>
-            </p>
-        </div> 
-        *}
-    
-    <div class="twelve columns">
-        <div class="hr"></div>
 
-        <div class="centersectiontitle">
-        <h4>How to get there..</h4>
-        </div>
-    </div>
-    <div class="six columns">
-        {*
-        <iframe class="gmap" frameborder="0" style="border:0" 
-        src="https://www.google.com/maps/embed/v1/place?q=SEAMEO%20BIOTROP&key=AIzaSyBkIORzgpv_xxMkwmTcx3DaWuBRCPJHBLA"></iframe>
-        *}
-        <iframe class="gmap" frameborder="0" style="border:0" 
-        src="https://www.google.com/maps/embed/v1/directions?origin=Soekarno%20Hatta%20International%20Airport%2C%20Pajang%2C%20Banten%2C%20Indonesia&destination=SEAMEO%20BIOTROP&key=AIzaSyBkIORzgpv_xxMkwmTcx3DaWuBRCPJHBLA">
-        </iframe>
+<section id="page-title">
+    <div class="container clearfix">
+        <h1>Conference Venue</h1>
         
-        {*<div id="mapcanvas" style="clear: both; height:400px; width:100%"></div>*}
     </div>
-    <div class="six columns">
-        <img src="templates/theme02/images/lokasi_conference.png" alt="How to get there"> </div>
-    <div class="twelve columns">
-        <div class="hr"></div>
-        <p><a href="templates/theme02/images/infopack_2nd_ictb_2015.pdf" target="Info Pack"><strong>CLICK HERE</strong></a> TO DOWNLOAD INFO PACK FOR YOUR GUIDANCE.</p>
+</section>
+
+<section id="content">
+    <div class="content-wrap">
+
+        <div class="container clearfix">
+            <div class="fancy-title title-double-border">
+                <h4><span>Venue</span></h4>
+            </div>
+
+            <img src="images/foto_biotrop.jpg" />
+
+            <div class="divider divider-rounded divider-center"><i class="icon-map-marker"></i></div>
+
+            <div class="fancy-title title-double-border">
+                <h4><span>How to Get There</span></h4>
+            </div>
+            <div id="google-map4" style="height: 300px;" class="gmap bottommargin"></div> 
+            <div class="divider"><i class="icon-circle"></i></div>
+            <div class="titleblock">
+
+                <div style="font-size:1.1em">
+                    <strong>Secretariat of SEAMEO BIOTROP 2<sup>nd</sup> International Conference on Tropical Biology</strong><br><br>
+                    <strong><a href="http://www.biotrop.org" title="SEAMEO BIOTROP" target="_blank">SEAMEO BIOTROP</a></strong><br>
+                    Jl.Raya Tajur Km. 6 Bogor 16134, INDONESIA<br>
+                    E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br>
+                    Tel: +62-251-8323848<br>
+                    Fax: +62-251-8326851<br>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+</section>
+@endsection
 
-    </div> 
-    
-    
-<div class="hr"></div>
+@section('script')
 
-<div class="row">
-    <!-- MAIN CONTENT-->
-    <div class="seven columns">
-    <div class="panel">
-    
-    <div style="font-size:1.1em">
-        <strong>Secretariat of SEAMEO BIOTROP 2<sup>nd</sup> International Conference on Tropical Biology</strong><br /><br />
-        <strong><a href="http://www.biotrop.org" title="SEAMEO BIOTROP" target="_blank">SEAMEO BIOTROP</a></strong><br />
-        Jl.Raya Tajur Km. 6 Bogor 16134, INDONESIA<br />
-        E-mail: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a><br />
-        Tel: +62-251-8323848<br />
-        Fax: +62-251-8326851<br />
-    </div>
-    
-    </div>
-    </div>  
-</div>
-
-<div class="hr">
-</div>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBSRvB11h-a_4t5-lRmC5SWpQdoZOdoKQk"></script>
+<script src="{{ asset("js/jquery.gmap.js") }}"></script>
 
 
+<script>
+    $('#google-map4').gMap({
+        address: 'SEAMEO BIOTROP, Bogor',
+        maptype: 'ROADMAP',
+        zoom: 13,
+        markers: [
+        {
+            address: "SEAMEO BIOTROP, Bogor",
+            html: "<a href='https://goo.gl/maps/EkcVKwMZfS72' target='_BLANK'>Direction to SEAMEO BIOTROP, Bogor</a>"
+        }
+        ],
+        doubleclickzoom: false,
+        controls: {
+            panControl: true,
+            zoomControl: true
+
+        }
+    });
+</script>
 @endsection

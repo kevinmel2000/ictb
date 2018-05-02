@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
+<link rel="icon" href="{{ asset("favicon.ico") }}" type="image/x-icon" />
+<link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon" />
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="{{ asset("css/bootstrap.css") }}" type="text/css" />
@@ -55,7 +57,7 @@
 									</ul>
 								</li>
 								<li><a href="{{ route('schedule') }}">Schedule & Program</a>
-
+								<li><a href="{{ route('committee') }}">Committee</a></li>
 							</ul>
 						</li>
 
@@ -71,13 +73,15 @@
 						</li>
 
 									@guest
-									<li>
+									<!--<li>
 										<a href="{{ route('register') }}">Registration</a>
 										<ul>
 											<li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
 											<li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
 										</ul>
+
 									</li>
+									-->
 									@else
 									<li>
 										<a  href="#">
@@ -103,7 +107,7 @@
 								<li>
 									<a href="#">Download</a>
 									<ul>
-										<li><a target="_blank" href="ftp://ftp.biotrop.org/International_Conference_on_Tropical_Biology_2015/">Presentation Files</a></li>
+										<!--<li><a target="_blank" href="ftp://ftp.biotrop.org/International_Conference_on_Tropical_Biology_2015/">Presentation Files</a></li>-->
 										<li>
 											<a target="_blank" href="{{ asset('images/2nd ICTB_InfoKit.pdf') }}">Arrival info pack</a>
 										</li>

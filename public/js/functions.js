@@ -1676,13 +1676,13 @@ var SEMICOLON = SEMICOLON || {};
                     M = !0;
                 i || (i = 4), s || (s = Number(i)), n || (n = Number(s)), o || (o = Number(n)), r || (r = Number(o)), l || (l = Number(r)), u || (u = 250), g || (g = 20), v || (v = 0), O || (O = 0), y || (y = 1), y = "page" == y ? "page" : Number(y), d = "true" == d, c ? (I = Number(c), c = !0) : (c = !1, M = !1), f || (f = !1), h || (h = !1), m = "false" != m, p = "false" != p, b = "true" == b, C = "true" == C, w = "true" == w, S = "true" == S, N = "true" == N, x = !("true" != x && !a.hasClass("rtl")), t.owlCarousel({
                     margin: Number(g),
-                    loop: d,
+                    loop: false,
                     stagePadding: Number(v),
                     merge: C,
                     startPosition: Number(O),
                     rewind: b,
                     slideBy: y,
-                    center: w,
+                    center: true,
                     lazyLoad: S,
                     nav: m,
                     navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],

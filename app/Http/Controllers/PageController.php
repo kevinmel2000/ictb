@@ -16,6 +16,10 @@ class PageController extends Controller
         return view('about');
     }
 
+    public function committee(){
+        return view('committee');
+    }
+
     public function speaker(){
         return view('speaker');
     }

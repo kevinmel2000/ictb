@@ -67,29 +67,7 @@
 
                 <div class="divider"><i class="icon-circle"></i></div>
 
-                <div class="title-block">
-               
-                <div class="fancy-title title-double-border">
-                    <h4><span>Steering Committee</span></h4>
-                </div>
-
-                        <span>
-                            Dr. Irdika Mansur (SEAMEO BIOTROP Director)<br/>
-                            Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br/>
-                            Dr. Zulhamsyah Imran (SEAMEO BIOTROP Deputy Director for Administration)<br/>
-                        </span>
-                        <br/><br/>
-                   <div class="fancy-title title-double-border">
-                    <h4><span>Scientific Committee</span></h4>
-                </div>
-
-                        <span>
-                            Dr. Irdika Mansur (SEAMEO BIOTROP Director)<br/>
-                            Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br/>
-                            Dr. Zulhamsyah Imran (SEAMEO BIOTROP Deputy Director for Administration)<br/>
-                        </span>
-                        
-             </div>
+      
          </div>
 
      </div>

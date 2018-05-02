@@ -30,6 +30,7 @@ Route::group(['middleware' => ['payment']], function () {
 
 
 Route::get('/about', 'PageController@about')->name('about');
+Route::get('/committee', 'PageController@committee')->name('committee');
 Route::get('/speaker', 'PageController@speaker')->name('speaker');
 Route::get('/theme', 'PageController@theme')->name('theme');
 Route::get('/schedule', 'PageController@schedule')->name('schedule');

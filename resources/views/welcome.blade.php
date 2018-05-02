@@ -22,9 +22,9 @@
 			</div>
 
 			<div class="center topmargin-lg">
-				<a href="#" class="button button-3d button-purple button-rounded button-xlarge">Register Now</a>
+				<a href="#" class="button button-3d button-purple button-rounded button-xlarge">Registration Open At 16 May 2018</a>
 				<span class="d-none d-md-inline-block"> - OR - </span>
-				<a href="#" class="button button-3d button-white button-light button-rounded button-xlarge">Read Details</a>
+				<a href="{{ route('about') }}" class="button button-3d button-white button-light button-rounded button-xlarge">Read Details</a>
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 		<div>
 			<h3 class="uppercase" style="font-weight: 600;">Objectives</h3>
 			<p style="line-height: 1.8;">The conference generally aims to assess successes, opportunities, and gaps in current practices, research efforts and policies associated with the conservation, enhancement and sustainable use of flora and fauna in Southeast Asia.</p>
-			<a href="#" class="button button-border button-light button-rounded uppercase nomargin">Read More</a>
+			<a href="{{ route('about') }}" class="button button-border button-light button-rounded uppercase nomargin">Read More</a>
 			<i class="icon-bulb bgicon"></i>
 		</div>
 	</div>
@@ -43,7 +43,7 @@
 		<div>
 			<h3 class="uppercase" style="font-weight: 600;color:#fff;">Outputs</h3>
 			<p style="line-height: 1.8;color:#fff;">The conference is expected to bring about consensus among the participants on an agenda for future research and advocacy actions on the conservation, enhancement and sustainable use of indigenous flora and fauna in Southeast Asia to support the effective implementation of existing national policies.</p>
-			<a href="#" class="button button-border button-light button-rounded uppercase nomargin">Read More</a>
+			<a href="{{ route('about') }}" class="button button-border button-light button-rounded uppercase nomargin">Read More</a>
 			<i class="icon-cog bgicon"></i>
 		</div>
 	</div>
@@ -51,7 +51,7 @@
 		<div>
 			<h3 class="uppercase" style="font-weight: 600;">Themes</h3>
 			<p style="line-height: 1.8;">The Conference theme, “Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna”.</p>
-			<a href="#" class="button button-border button-light button-rounded uppercase nomargin">Read More</a>
+			<a href="{{ route('theme') }}" class="button button-border button-light button-rounded uppercase nomargin">Read More</a>
 			<i class="icon-thumbs-up bgicon"></i>
 		</div>
 	</div>
@@ -152,16 +152,20 @@
 					<h3><span>Partners</span></h3>
 				</div>
 				<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="true" data-nav="true" data-autoplay="2000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+					<div class="oc-item"><a href="https://clsu.edu.ph/"><img src="images/clients/clsu.png" alt="Central Luzon State University"></a></div>
+					<!--
+						
 					<div class="oc-item"><a href="https://ipb.ac.id/"><img src="images/clients/ipb.png" alt="Institut pertanian Bogor"></a></div>
 					<div class="oc-item"><a href="http://www.pertanian.go.id/"><img src="images/clients/pertanian.png" alt="Ministry of Agriculture of Republic of Indonesia"></a></div>
 					<div class="oc-item"><a href="http://www.menlhk.go.id/"><img src="images/clients/klhk.png" alt="Ministry of Environment and Forestry of Republic of Indonesia"></a></div>
-					<div class="oc-item"><a href="https://clsu.edu.ph/"><img src="images/clients/clsu.png" alt="Central Luzon State University"></a></div>
+					
 					<div class="oc-item"><a href="https://www.iucn.org"><img src="images/clients/iucn.png" alt="International Union for Conservation of Nature and Natural Resources (IUCN)"></a></div>
 					<div class="oc-item"><a href="www.upm.edu.my"><img src="images/clients/upm.png" alt="University Putra Malaysia (UPM)"></a></div>
 					<div class="oc-item"><a href="https://www.wwf.or.id/en/"><img src="images/clients/wwf.png" alt="World Wide Fund (WWF) Indonesia"></a></div>
 					<div class="oc-item"><a href="https://www.nature.or.id/"><img src="images/clients/tnc.png" alt="The Nature Conservancy (TNC) Indonesia"></a></div>
 					<div class="oc-item"><a href="www.conservation.org/global/indonesia/Pages/beranda.aspx"><img src="images/clients/ci.png" alt="Conservation International (CI) Indonesia"></a></div>
 					<div class="oc-item"><a href="https://www.bioversityinternational.org"><img src="images/clients/bi.png" alt="Bioversity International"></a></div>
+				-->
 				</div>
 			</div>
 		</div>

@@ -1,42 +1,29 @@
-@extends('layouts.web')
+@extends('layouts.newweb')
+
 
 
 @section('content')
-<!-- SUBHEADER
-================================================== -->
-<div id="subheader">
-    <div class="row">
-        <div class="twelve columns">
-            <p class="left">
-                 ACCOMMODATION
-            </p>
-            <p class="left">
-            {if $smarty.session.login}
-            <div class="welcomeuser">Welcome: {$cms.login_name} | <a class="readmore1" href="index.php?mode=logout&id={$smarty.session.uid}">Logout</a></div>
-            {/if}
-            </p>
-        </div>
+
+<section id="page-title">
+    <div class="container clearfix">
+        <h1>Accomodation</h1>
+        
     </div>
-</div>
+</section>
 
-<div class="background_content">
-<div class="hr">
-</div>
-<!-- CONTENT 
-================================================== -->
-<div class="row">
-    <!-- MAIN CONTENT-->
-    <div class="twelve columns">
-        <!-- Our History-->
-        <div class="sectiontitle">
-            <h4>Accommodation Options</h4>
-        </div>
+<section id="content">
+    <div class="content-wrap">
 
-        <p>
+        <div class="container clearfix">
+            <div class="fancy-title title-double-border">
+                <h4><span>Accomodation Options</span></h4>
+            </div>
+
+                <p>
             The following are rates and websites of hotels that are available in Bogor:
             </p>
         <!-- TABLES -->
-        <table>
+        <table class="table table-striped">
             <thead>
               <tr>
                 <th colspan="2">Name of Hotel
@@ -49,7 +36,7 @@
              </thead>
             <tbody>
               <tr>
-                <td><img src="templates/theme02/images/photo_hotel/santika01.jpeg"></td>
+                <td><img src="images/hotels/santika01.jpeg"></td>
                 <td><strong>Santika Hotel</strong></td>
                 <td>Superior</td>
                 <td>682,000</td>
@@ -58,7 +45,7 @@
                 </td>
               </tr>
               <tr>
-                <td ><img src="templates/theme02/images/photo_hotel/ipb_convention_hotel.png"></td>
+                <td ><img src="images/hotels/ipb_convention_hotel.png"></td>
                 <td ><strong>IPB Convention Hotel</strong></td>
                 <td >Superior</td>
                 <td >653,000</td>
@@ -67,7 +54,7 @@
                 </td>
               </tr>
               <tr>
-                <td ><img src="templates/theme02/images/photo_hotel/fave_hotel.png"></td>
+                <td ><img src="images/hotels/fave_hotel.png"></td>
                 <td ><strong>Fave Hotel</strong></td>
                 <td >Standard</td>
                 <td >558,000</td>
@@ -77,7 +64,7 @@
                 </td>
               </tr>
               <tr>
-                <td ><img src="templates/theme02/images/photo_hotel/amaris_padjajaran.png"></td>
+                <td ><img src="images/hotels/amaris_padjajaran.png"></td>
                 <td ><strong>Amaris Pajajaran Hotel</strong></td>
                 <td >Smart Room</td>
                 <td >450,000</td>
@@ -87,7 +74,7 @@
                 </td>
               </tr>
               <tr>
-                <td ><img src="templates/theme02/images/photo_hotel/amaris_pakuan.png"></td>
+                <td ><img src="images/hotels/amaris_pakuan.png"></td>
                 <td ><strong>Amaris Pakuan Hotel</strong></td>
                 <td >Smart Room</td>
                 <td >450,000</td>
@@ -97,7 +84,7 @@
                 </td>
               </tr>
               <tr>
-                <td><img src="templates/theme02/images/photo_hotel/horison_bogor.jpeg"></td>
+                <td><img src="images/hotels/horison_bogor.jpeg"></td>
                 <td ><strong>Horison Bogor Hotel</strong></td>
                 <td >Deluxe</td>
                 <td >620,000</td>
@@ -108,7 +95,7 @@
               
               
               <tr>
-                <td><img src="templates/theme02/images/photo_hotel/sofyan_inn_bogor.png"></td>
+                <td><img src="images/hotels/sofyan_inn_bogor.png"></td>
                 <td ><strong>Sofyan Inn Srigunting Hotel</strong></td>
                 <td >Superior</td>
                 <td >550,000</td>
@@ -118,7 +105,7 @@
               </tr>
               
               <tr>
-                <td><img src="templates/theme02/images/photo_hotel/zest_hotel_bogor.png"></td>
+                <td><img src="images/hotels/zest_hotel_bogor.png"></td>
                 <td ><strong>Zest Hotel Bogor</strong></td>
                 <td >Standard</td>
                 <td >435,000</td>
@@ -127,7 +114,7 @@
 </td>
               </tr>
             <tr>
-                <td><img src="templates/theme02/images/photo_hotel/royal_hotel.png"></td>
+                <td><img src="images/hotels/royal_hotel.png"></td>
                 <td ><strong>Royal Hotel</strong></td>
                 <td >Superior</td>
                 <td >580,000</td>
@@ -136,7 +123,7 @@
 </td>
               </tr>
               <tr>
-                <td><img src="templates/theme02/images/photo_hotel/pajajaran_suite.jpeg"></td>
+                <td><img src="images/hotels/pajajaran_suite.jpeg"></td>
                 <td><strong>Padjadjaran Suites Hotel & Conference</strong></td>
                 <td>Superior</td>
                 <td>762,000</td>
@@ -151,10 +138,9 @@
     <p>
             SEAMEO BIOTROP Dormitory (twin sharing room) is available for first come-first served booking. Further details, please contact: <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a>
         </p>
+        </div>
 
-</div><!-- end main content-->
-</div>
-
-<div class="hr">
-</div>
+    </div>
+</section>
 @endsection
+
