@@ -204,60 +204,68 @@
 		eventLimit: true,
 		events: [{
 			title: 'Call for abstracts',
-			start: '2018-04-16',
-			end: '2018-05-31'
+			url: '{{ route('schedule') }}',
+			start: '2018-05-01',
+			end: '2018-06-08'
 		},
 		{
 			title: 'Registration starts',
+			url: '{{ route('schedule') }}',
 			start: '2018-05-16'
 		},
 		{
 			title: 'Abstract submissions deadline',
-			start: '2018-05-31'
+			url: '{{ route('schedule') }}',
+			start: '2018-06-8'
 		},
 		{
 			title: 'Accepted abstracts announcements',
-			start: '2018-06-20'
+			url: '{{ route('schedule') }}',
+			start: '2018-06-25'
 		},
 		{
 			title: 'Participants early bird registration deadline',
-            //url: 'http://google.com/',
+            url: '{{ route('schedule') }}',
             start: '2018-07-31'
         },
         {
         	title: 'Registration deadline for exhibitors',
+        	url: '{{ route('schedule') }}',
         	start: '2018-08-10'
         },
         {
         	title: 'Extended abstracts submission deadline',
+        	url: '{{ route('schedule') }}',
         	start: '2018-08-10'
         },
         {
-        	title: 'Announcement for early bird registration',
-        	start: '2018-08-10'
-        },
-        {
-        	title: 'Announcement of accepted exhibitors',
+        	title: 'Announcement for early bird registration and exhibitors',
+        	url: '{{ route('schedule') }}',
         	start: '2018-08-13'
         },
         {
         	title: 'Deadline for registration and payment for paper and poster presenters',
+        	url: '{{ route('schedule') }}',
         	start: '2018-08-16'
         },
         {
         	title: 'Deadline of payment for exhibition ',
+        	url: '{{ route('schedule') }}',
         	start: '2018-08-24'
         },
         {
         	title: 'Deadline for regular registration and payment (for general participants only)',
-        	start: '2018-09-03'
+        	url: '{{ route('schedule') }}',
+        	start: '2018-09-07'
         },
         {
         	title: 'Deadline for uploading oral presentation files',
-        	start: '2018-09-04'
+        	url: '{{ route('schedule') }}',
+        	start: '2018-09-03'
         },
         {
         	title: 'Conference',
+        	url: '{{ route('schedule') }}',
         	start: '2018-09-20',
         	end: '2018-09-21'
         },
