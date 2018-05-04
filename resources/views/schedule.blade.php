@@ -28,7 +28,7 @@
        </thead>
        <tr>
         <td>Call for abstracts</td>
-        <td>16 April - 31 Mei 2018 </td>
+        <td>1 May - 8 June 2018</td>
       </tr>
       <tr>
         <td>Registration for participants and exhibitors starts</td>
@@ -36,15 +36,15 @@
       </tr>
       <tr>
         <td>Deadline for abstract submissions</td>
-        <td>31 May 2018</td>
+        <td>8  June  2018</td>
       </tr>
       <tr>
         <td>Evaluation and Selection of abstracts</td>
-        <td>1 – 19 Juni 2018</td>
+        <td>16 May – 8 June 2018</td>
       </tr>
       <tr>
         <td>Announcement of accepted abstracts for oral and poster presentations</td>
-        <td>20 June 2018</td>
+        <td>25  June 2018</td>
       </tr>
       <tr>
         <td>Registration deadline for exhibitors</td>
@@ -78,11 +78,11 @@
       </tr>
       <tr>
         <td>Deadline for regular registration and payment (for general participants only)</td>
-        <td>3 September 2018</td>
+        <td>7 September 2018</td>
       </tr>
       <tr>
         <td>Deadline for uploading oral presentation files</td>
-        <td>4 September 2018</td>
+        <td>3  September 2018</td>
       </tr>
       <tr>
         <td>Conference</td>

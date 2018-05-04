@@ -22,26 +22,26 @@
 
                 <div class="row">
                     <div class="col-lg-3 col-md-6 bottommargin">
-                        <div class="team">
-                            <div class="team-image">
-                                <img src="images/team/alison.jpg" alt="Prof Alison Martin">
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-title"><h4>Prof Alison Martin, PhD</h4><span>/ The Livestock Conservancy, USA</span></div>
-                                <!--<div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat assumenda similique unde mollitia eum rerum at voluptatibus saepe totam possimus.</div>-->
-                            </div>
-                        </div>
+                      <div class="team">
+                    <div class="team-image">
+                        <img src="images/team/chew.jpg" alt="Prof Alison Martin">
+                    </div>
+                    <div class="team-desc">
+                        <div class="team-title"><h4>Dr Chew Fook Tim</h4><span>/ Associate Professor (Biological Sciences), Vice Dean (Faculty of Science), <small>Department of Biological Sciences, Functional Genomics Laboratories, National University of Singapore, Singapore</small>
+</span></div>
+                        <!--<div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat assumenda similique unde mollitia eum rerum at voluptatibus saepe totam possimus.</div>-->
+                    </div>
+                </div>
                     </div>
                     <div class="col-lg-3 col-md-6 bottommargin">
-                        <div class="team">
-                            <div class="team-image">
-                                <img src="images/team/muladno.jpg" alt="Dr Muladno">
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-title"><h4>Prof Dr Muladno</h4><span>/ Faculty of Animal Science, <br/><small>Bogor Agricultural University, Indonesia</small></span></div>
-                                
-                            </div>
-                        </div>
+                       <div class="team">
+                    <div class="team-image">
+                        <img src="images/team/ani.jpg" alt="Dr Muladno">
+                    </div>
+                    <div class="team-desc">
+                        <div class="team-title"><h4>Prof. Dr. Ir. Ani Mardiastuti, M.Sc</h4><span>/ Head of Ecology and Wildlife Management Division, <small>Department of Forest Resources Conservation and Ecotourism, Faculty of Forestry, IPB</small></span></div>
+                    </div>
+                </div>
                     </div>
                     <div class="col-lg-3 col-md-6 bottommargin">
                         <div class="team">
@@ -53,6 +53,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--
                     <div class="col-lg-3 col-md-6 bottommargin">
                         <div class="team">
                             <div class="team-image">
@@ -74,7 +75,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>

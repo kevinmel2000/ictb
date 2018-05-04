@@ -20,7 +20,7 @@
                 <h4><span>Registration</span></h4>
             </div>
 
-            <span>
+<span>
                 <strong><em>How to Register</em></strong><br>
                   Registration can only be made online. Before  clicking this Online Registration Form, please read the following instructions:
                   <ul style="margin-left:30px">
@@ -41,15 +41,15 @@
           <strong><em>Other Information</em></strong>
           <br/>
               Provide all information required in all the  boxes.
-                </p>
-          <p><strong><em>Submission</em></strong>
+</p>
+<p><strong><em>Submission</em></strong>
             <br/>
               Please check all boxes to ensure that they are  completely filled up, before you click &quot;Submit&quot;.
-              </p>
+  </p>
       
-          Author can return to the registration page and  revise the information on abstract until the deadline of abstract submission  date on June 30, 2015.    
+Author can return to the registration page and  revise the information on abstract until the deadline of abstract submission  date on June 8, 2018.    
 
-      </span>
+</span>
       <p></p>
 
 
