@@ -37,4 +37,17 @@ class User extends Authenticatable
     public function application(){
      return $this->hasOne('App\Application', 'participant_id');   
     }
+
+    public function title(){
+        return $this->belongsTo('App\Title', 'type_title_id');
+    }
+
+    public function organizationType(){
+        return $this->belongsTo('App\Organization', 'type_organization_id');
+    }
+
+    public function country(){
+        return $this->belongsTo('App\Country', 'countries_id');
+    }
+    
 }

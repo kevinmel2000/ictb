@@ -32,7 +32,6 @@
                 <h4>Information Form for: {{ Auth::user()->registration_id }}</h4>
             </div>
 
-            <div class="row collapse">
                 <div class="eight columns">
                     <div class="reg_step">
                         <ul>

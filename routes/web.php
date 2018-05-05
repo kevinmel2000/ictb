@@ -22,6 +22,8 @@ Route::post('/storeinfo', 'HomeController@storeInfo')->name('storeinfo');
 Route::post('/updateinfo', 'HomeController@updateInfo')->name('updateinfo');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/summary', 'HomeController@summary')->name('summary');
+Route::post('/confirm', 'HomeController@confirm')->name('confirm');
+Route::post('/confirmpayment', 'HomeController@confirmPayment')->name('confirmPayment');
 
 Route::group(['middleware' => ['payment']], function () {
     Route::get('/application', 'HomeController@application')->name('application');

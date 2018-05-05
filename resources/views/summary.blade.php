@@ -32,150 +32,157 @@
                 <h4>Registration Summary for: {{ Auth::user()->registration_id }}</h4>
             </div>
 
-            <div class="row collapse">
-                <div class="eight columns">
-                    <div class="reg_step">
-                        <ul>
-                            <li class="current">Identification</li>
-                            <li class="current">Additional Information</li>
-                            <li class="current">Application</li>
-                            <li class="current">Confirmation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @if(empty($user->payment))
+                @include('component/stepsclickable')
 
-            <p>
-                Please fill in the form. All fields are required. When you are ready to submit, please check that all fields are filled. A red border indicates that the information entered does not onform with the required format, and needs to be changed. 
-            </p>
+                <p>
+                    Summary of all the information that you have entered earlier. Please make sure all information shown are correct before clicking on Confirmation Button.
+                    <br/>
+                    <strong>You can only edit on abstract and extended abstract section after you have clicked the confirmation button.</strong>
+                </p>
+
+            @else
+                @include('component/stepsdisabled')
+
+                @if(empty($user->paymentConfirmation))
+                    
+    <blockquote>
+
+                    Please pay for the amount of {{ $user->payment }}, to: 
+                    @if($isForeign)
+                        <br/>SEAMEO BIOTROP
+                        <br/>No. 0003890624
+                        <br/>Bank BNI, Bogor Branch 
+                        <br/>Jl. Ir. H. Juanda, Bogor 
+                        <br/>West Java, Indonesia 
+                        <br/>SWIFT CODE: BNINIDJABGR 
+                    @else
+                        <br/>BIOTROP SEAMEO
+                        <br/>No. 0003893863
+                        <br/>Bank BNI, Bogor Branch 
+                        <br/>Jl. Ir. H. Juanda, Bogor    
+                        <br/>West Java, Indonesia      
+                        <br/>SWIFT CODE: BNINIDJABGR
+                    @endif
+
+                    <p>After you have completed the payment, please upload your receipt here:</p> 
+                    <form class="frm_regstep3" method="post" action="{{ route('confirmPayment') }}" id="infoform" enctype="multipart/form-data">
+                        {{ csrf_field() }}
+                            <input type="file" id="pic_std_id" name="file_upload" multiple accept=".jpg,.jpeg,.pdf,.png"/>
+                            <input type="submit" />
+                    </form>
+                    </blockquote>
+                @else
+                <h4>Thank you for your payment</h4><br/>See you at the conference<br/>
+                <img src="{{ asset('storage/payment').'/'.$user->paymentConfirmation }}" />
+                @endif
+
+            @endif
 
             <!-- FORMS-->
 
             <!-- FORMS-->
             <div class="twelve columns">
-                <form class="frm_regstep3" method="post" action="{{ route('storeinfo') }}" id="infoform" enctype="multipart/form-data">
+                
                     <div class="form">
 
                         <fieldset>
-                            <legend><h6>Other Information</h6></legend>
+                            <legend><h6>Registrant Information</h6></legend>
                             <div class="row">
-                                    {{ csrf_field() }}
-                                    <div class="ten columns">
-                                         <label for="error" style="color:#F00; padding-bottom:5px;"></label>
-                                    @if ($errors->any())
-                                    <div class="alert alert-danger">
-                                        <ul>
-                                            @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
+                                <div class="ten columns">
+                                  
+                                <label>Fullname: <strong>{{ $user->title->title.' '.$user->lastname.', '.$user->firstname }}</strong></label>
+                                
+                                <label>Registration Code: <strong>{{ $user->registration_id }}</strong></label>
+
+                                <label>Participant Type: <strong>{{ $user->participantType->type }}</strong></label>
+
+                                <label>Email address: <strong>{{ $user->email }}</strong></label>
+
+                                <label>Gender: <strong>{{ $user->gender }}</strong></label>
+
+                                
+                                <label>Organization: <strong>{{ $user->organization." (".$user->organizationType->type.")" }}</strong></label>
+
+
+                                <label>Country: <strong>{{ $user->country->country_name }}</strong></label>
+
+                                <label>Participant Category: <strong>
+                                    @if($user->student == "Yes")
+                                        Student | <a href="{{ asset($user->studentid) }}" target="_BLANK">Proof</a>
+                                    @else
+                                        General
                                     @endif
-
-      <label>Organization</label>
-                                <div class="row collapse">
-                                    <div class="twelve columns">
-                                        <input type="text" name="organi" class="smoothborder"  placeholder="Organization" required value="{{ old('organi') }}"/>
-                                    </div>
-                                </div>
-
-                                <label>Organization type</label>
-                                <div class="row collapse">
-                                    <div class="twelve columns">
-                                        
-
-                                    </div>
-                                </div>
-
-                                <label>Title</label>
-                                <div class="row collapse">
-
-                                    <div class="twelve columns">
-                                        
-                                    </div>
-
-                                </div>
-
-                                <label>Country</label>
-                                <div class="row collapse">
-
-                                    <div class="twelve columns">
-                                        
-
-                                    </div>
-                                </div>
+                                </strong></label>
 
 
-                                    <label>Gender</label>
-                                    <div class="row collapse">
-                                        <div class="four columns">
-                                            <div class="six columns">
-                                                <input type="radio" name="rd_gender" value="Male" id="g_male" checked/>
-                                                <label for="g_male" class="label_radio">Male</label>
-                                            </div>
-                                            <div class="six columns">        
-                                                <input type="radio" name="rd_gender" value="Female" id="g_female"/>
-                                                <label for="g_female" class="label_radio">Female</label>                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <label>Are you student?</label>
-                                    <div class="row collapse">
-                                        <div class="four columns">
-                                            <div class="six columns">
-                                                <input type="radio" name="rd_student" value="No" class="rd_student" checked/>
-                                                <label for="n_student" class="label_radio">No</label>
-                                            </div>
-                                            <div class="six columns">        
-                                                <input type="radio" name="rd_student" value="Yes" class="rd_student"/>
-                                                <label for="y_student" class="label_radio">Yes</label>                                                          
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="pic_student_id">   
-
-                                    </div>
-
-                                    <label>Do you have funding support for attending this conference?</label>
-                                    <div class="row collapse">
-                                        <div class="four columns">
-                                            <div class="controls">
-                                                <div class="six columns">
-                                                    <input type="radio" name="rd_fundsupport" value="No" class="fundsupport"/>
-                                                    <label for="n_fsupport" class="label_radio">No</label>
-                                                </div>
-                                                <div class="six columns">        
-                                                    <input type="radio" name="rd_fundsupport" value="Yes" class="fundsupport" checked/>
-                                                    <label for="y_fsupport" class="label_radio">Yes</label>                                                             
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-
-                                    <div id="fundsupportholder">
-                                        
-                                    </div>
-                               <label>Do you have any food or beverage preverence or allergies? (halal, allergies to seafood, etc), <br/>If '<strong>Yes</strong>', please state here:</label>
-                               <div class="row collapse">
-                                <div class="seven columns">
-                                    <input type="text" name="txt_foodalergies" id="txt_foodalergies" placeholder="Food or beverage allergies" value="{{ old('txt_foodalergies') }}" class="smoothborder"/>
-                                </div>
-                            </div>
-                            
+                                <label>Food allergies: <strong>{{ $user->allergies }}</strong></label>
                             <!-- ------- -->                            
                         </div>
                     </div>
 
                     
                 </fieldset>
-                <input type=hidden name=type_parti value={$cms.type_of_parti}>
-                <input type=hidden name=submitid value={$cms.submitid}>
-                <input type=hidden name=register_id value={$cms.register_id}>
-                <input type="submit" id="regstep1" class="readmore" value="Next">
+
+
+                     <fieldset>
+                            <legend><h6>Application Information</h6></legend>
+                            <div class="row">
+                                <div class="ten columns">
+                                  
+                                <label>Application Type <strong>{{ $application->apptype->type }}</strong></label>
+                                
+                                <label>Theme: <strong>{{ $application->subtheme->theme->theme }}</strong></label>
+
+                                <label>Subtheme: <strong>{{ $application->subtheme->sub_theme }}</strong></label>
+
+                                <label>Title: <strong>{{ $application->title }}</strong></label>
+
+                                <label>Abstract: <br/><strong>{{ $application->abstract }}</strong></label>
+
+                                <label>Keywords: <br/><strong>{{ $application->keyword }}</strong></label>
+                                
+                                <label>Publication Type: <strong>{{ $application->publicationtype->type }}</strong></label>
+                            <!-- ------- -->                            
+                        </div>
+                    </div>
+
+                    
+                </fieldset>
+
+
+                @if($user->payment == NULL)
+                
+                <fieldset>
+                            <legend><h6>Payment Information</h6></legend>
+                            <div class="row">
+                                <div class="ten columns">
+                                @if($isStudent)
+                                    <h4>Student Rate</h4>
+                                @endif
+
+                                <label>Participation as {{ $user->participantType->type }}: {{ $currency." ".number_format($participation) }}</label>
+                                
+                                @if($proceeding != 0)
+                                    <label>Proceeding<strong>: {{ $currency." ".number_format($proceeding) }}</strong></label>
+                                @endif
+                                
+                                <strong>Total payment: {{ $currency.' '.number_format($proceeding + $participation) }}</strong>
+                                
+                            <!-- ------- -->                            
+                        </div>
+                    </div>
+
+                    
+                </fieldset>
+                <form method="POST" action="{{ route('confirm') }}">
+                {{ csrf_field() }}
+                <input type="hidden" value="{{ $currency.' '.number_format($proceeding + $participation) }}" name="payment"/>
+                <input type="submit" id="regstep1" class="readmore" value="Confirm Data">
+                </form>
+                @endif
             </div>
-        </form>
+        
             </div>
         </div>
 

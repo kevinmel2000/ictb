@@ -187,12 +187,96 @@ public function storeInfo(Request $request){
      return redirect()->route('home');
     }
 
+
+public function confirmPayment(Request $request){
+    $validatedData = $request->validate([
+        'file_upload' => 'sometimes|required|file|max:2000'
+       
+    ]);
+
+    $user = Auth::user();
+    $file = $request->file('file_upload');
+        
+            $name = str_slug($user->firstname." ".$user->lastname).".".$file->getClientOriginalExtension();
+            $path = $file->storeAs(
+                'public/payment', $name
+            );
+            $user->paymentConfirmation = $name;
+     
+
+      $user->save();
+
+
+     return redirect()->route('summary');
+    }
+
+
     public function summary(){
-        return view('summary');
+        $user = Auth::user();
+        $isForeign = $user->country->id != 1;
+        $isStudent = $user->student == "Yes";
+        $type = $user->participantType->id;
+
+        if($isForeign){
+            $currency = 'USD';
+            $participation = 0;
+
+            switch($type){
+                case 1: $participation = 100;
+                        break;
+                case 2: $participation = 150;
+                        break;
+                case 3: $participation = 70;
+            }
+
+            if($isStudent){
+                $participation = 50;
+            }
+
+        }else{
+
+            $currency = 'IDR';
+            $participation = 0;
+
+            switch($type){
+                case 1: $participation = 300000;
+                        break;
+                case 2: $participation = 2000000;
+                        break;
+                case 3: $participation = 250000;
+            }
+
+            if($isStudent){
+                $participation = 100000;
+            }
+        }
+        $proceeding = 0;
+
+        if($type == 1){
+            $application = $user->application;
+            if($application->publicationtype->kode == 'proceeding'){
+                if(isForeign){
+                    $proceeding = 20;
+                }else{
+                    $proceeding = 200000;        
+                }
+                
+            }
+        }
+
+        return view('summary', compact('user', 'isForeign', 'isStudent', 'currency', 'participation', 'application', 'proceeding'));
     }
 
     public function about(){
         return view('about');
+    }
+
+    public function confirm(Request $request){
+        $user = Auth::user();
+        $user->payment = $request->payment;
+        $user->save();
+
+        return redirect()->route('summary');
     }
 
     public function speaker(){
