@@ -27,7 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `applications`
 --
-
+set global innodb_file_format = BARRACUDA;
+set global innodb_large_prefix = ON;
 CREATE TABLE `applications` (
   `id` int(11) NOT NULL,
   `participant_id` int(11) NOT NULL,

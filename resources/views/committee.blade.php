@@ -33,9 +33,16 @@
             </div>
 
             <span>
-                Dr. Irdika Mansur (SEAMEO BIOTROP Director)<br/>
-                Dr. Jesus C. Fernandez (SEAMEO BIOTROP Deputy Director for Program)<br/>
-                Dr. Zulhamsyah Imran (SEAMEO BIOTROP Deputy Director for Administration)<br/>
+               Prof Dr Bambang Purwantara, SEAMEO BIOTROP
+               <br/>Prof Dr Azhar Kasim, Faculty of Agriculture, University Putra Malaysia
+               <br/>Prof Dr Muhamed Zakaria Hussin, Faculty of Forestry, University Putra Malaysia
+               <br/>Prof Dr Hwang Shaw Yhi, Faculty of Agriculture, National Chung Hsing University, Taiwan
+               <br/>Prof Willie Abasalo, Faculty of Forestry, University of Phillipines, Los Banos
+               <br/>Prof  Renato Reyes, Director for International Affairs, Central Luzon State University, Philippines
+               <br/>Dr  Evaristo A. Abella, College of Arts and Sciences, Central Luzon State University, Philippines
+               <br/>Prof Dr Ronny Rachman Noor, Faculty of Animal Science, Institut Pertanian Bogor, Indonesia
+               <br/>Dr Tri Asmira Damayanti, Institut Pertanian Bogor, Indonesia
+               <br/>Dr Mirza Dikari Kusrini, Institut Pertanian Bogor, Indonesia 
             </span>
             <br/><br/>
 
