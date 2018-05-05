@@ -109,7 +109,7 @@
 
                                 <label>Participant Category: <strong>
                                     @if($user->student == "Yes")
-                                        Student | <a href="{{ asset($user->studentid) }}" target="_BLANK">Proof</a>
+                                        Student | <a href="{{ asset('storage/studentid').'/'.$user->studentid) }}" target="_BLANK">Proof</a>
                                     @else
                                         General
                                     @endif

@@ -255,7 +255,7 @@ public function confirmPayment(Request $request){
         if($type == 1){
             $application = $user->application;
             if($application->publicationtype->kode == 'proceeding'){
-                if(isForeign){
+                if($isForeign){
                     $proceeding = 20;
                 }else{
                     $proceeding = 200000;        
