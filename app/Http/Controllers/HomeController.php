@@ -41,6 +41,10 @@ class HomeController extends Controller
         }else{
             //jika information sudah diisi, jika author, isi application
             if($participantType->type == 'Author'){
+                //jika udah punya application
+                if (Application::where('participant_id', '=', Auth::user()->id)->count() > 0) {
+                   return redirect()->route('summary');
+                }
                 return redirect()->route('application');
             }else{
                 return redirect()->route('summary');
@@ -184,7 +188,7 @@ public function storeInfo(Request $request){
     }
 
     public function summary(){
-        echo "sumary page";
+        return view('summary');
     }
 
     public function about(){

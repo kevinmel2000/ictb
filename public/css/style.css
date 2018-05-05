@@ -9280,7 +9280,7 @@ label.error{
     text-transform:uppercase
 }
 .heading-block h1{
-    font-size:32px
+    font-size: 48px
 }
 .heading-block h2{
     font-size:30px
@@ -11256,4 +11256,9 @@ label.checkbox,label.radio{
 .rating-container .filled-stars{
     -webkit-text-stroke:0!important;
     text-shadow:none!important
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
 }

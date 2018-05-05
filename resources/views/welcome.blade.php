@@ -7,22 +7,23 @@
 @endsection
 
 @section('content')
-<section id="slider" class="slider-element slider-parallax full-screen dark" style="overflow: hidden; background: url('{{ asset("images/home3.jpg") }}') no-repeat center center;background-size: cover;">
+<section id="slider"  role="img" aria-label="Sambar Rusa, Photograph by Tontan Travel, www.tontantravel.com" class="slider-element slider-parallax full-screen dark" style="overflow: hidden; background: url('{{ asset("images/home4.jpg") }}') no-repeat center center;background-size: cover;">
 	<div class="slider-parallax-inner">
 		<div class="container clearfix vertical-middle" style="z-index: 3;">
 			<div class="heading-block title-center nobottomborder not-dark" >
+				{{-- big logo
 				<div class="hidden-xs">
 					<img src="{{ asset("images/logo-big.png") }}" class="img-responsive"/>
 				</div>
-				<h1 style="text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
-             #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;">3<sup>rd</sup> International Conference on Tropical Biology</h1>
-				<h3 style="color:#fff">"Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna"</h3>
+				--}}
+				<h1 style="color:#eee; text-shadow: 1px 1px 1px rgba(0,0,0,.15);">3<sup>rd</sup> International Conference on Tropical Biology</h1>
+				<h4 style="color:#fff">"Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna"</h3>
 
-				<h5 style="color:#fff">20 - 21 September 2018, SEAMEO BIOTROP Convention Hall, Jl. Raya Tajur Km. 6, Bogor, Indonesia</h5>
+				<h4 style="color:#fff">20 - 21 September 2018, Bogor, Indonesia</h5>
 			</div>
 
 			<div class="center topmargin-lg">
-				<a href="#" class="button button-3d button-purple button-rounded button-xlarge">Registration Open At 16 May 2018</a>
+				<a href="#" class="button button-3d button-red button-rounded button-xlarge">Call for Papers</a>
 				<span class="d-none d-md-inline-block"> - OR - </span>
 				<a href="{{ route('about') }}" class="button button-3d button-white button-light button-rounded button-xlarge">Read Details</a>
 			</div>
@@ -132,14 +133,14 @@
 					<h4>Gallery</h4>
 				</div>
 				<div class="col_full masonry-thumbs grid-4 clearfix" data-lightbox="gallery">
-					<a href="images/events/1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/1.jpg" alt="Gallery Thumb 1"></a>
-					<a href="images/events/2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/2.jpg" alt="Gallery Thumb 2"></a>
-					<a href="images/events/3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/3.jpg" alt="Gallery Thumb 3"></a>
-					<a href="images/events/4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/4.jpg" alt="Gallery Thumb 4"></a>
-					<a href="images/events/5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/5.jpg" alt="Gallery Thumb 5"></a>
-					<a href="images/events/6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/6.jpg" alt="Gallery Thumb 6"></a>
-					<a href="images/events/7.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/7.jpg" alt="Gallery Thumb 7"></a>
-					<a href="images/events/8.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/events/thumbs/8.jpg" alt="Gallery Thumb 8"></a>
+					<a href="images/events/1.jpg" data-lightbox="gallery-item" title="Bogor Palace"><img class="image_fade" src="images/events/thumbs/1.jpg" alt="Bogor Palace"></a>
+					<a href="images/events/2.jpg" data-lightbox="gallery-item" title="Kebun Raya Bogor"><img class="image_fade" src="images/events/thumbs/2.jpg" alt="Gallery Thumb 2"></a>
+					<a href="images/events/3.jpg" data-lightbox="gallery-item" title="Lawang Salapan"><img class="image_fade" src="images/events/thumbs/3.jpg" alt="Gallery Thumb 3"></a>
+					<a href="images/events/4.jpg" data-lightbox="gallery-item" title="Tea Plantation in Puncak"><img class="image_fade" src="images/events/thumbs/4.jpg" alt="Gallery Thumb 4"></a>
+					<a href="images/events/5.jpg" data-lightbox="gallery-item" title="BIOTROP Dormitory"><img class="image_fade" src="images/events/thumbs/5.jpg" alt="Gallery Thumb 5"></a>
+					<a href="images/events/6.jpg" data-lightbox="gallery-item" title="BIOTROP Dormitory"><img class="image_fade" src="images/events/thumbs/6.jpg" alt="Gallery Thumb 6"></a>
+					<a href="images/events/7.jpg" data-lightbox="gallery-item" title="BIOTROP Building"><img class="image_fade" src="images/events/thumbs/7.jpg" alt="Gallery Thumb 7"></a>
+					<a href="images/events/8.jpg" data-lightbox="gallery-item" title="Pararrel Session Venue"><img class="image_fade" src="images/events/thumbs/8.jpg" alt="Gallery Thumb 8"></a>
 				</div>
 
 			</div>
@@ -151,21 +152,23 @@
 				<div class="heading-block center">
 					<h3><span>Partners</span></h3>
 				</div>
-				<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="true" data-nav="true" data-autoplay="2000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-					<div class="oc-item"><a href="https://clsu.edu.ph/"><img src="images/clients/clsu.png" alt="Central Luzon State University"></a></div>
-					<!--
-						
+				<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="false" data-nav="true" data-autoplay="2000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+					<div class="oc-item"><a target="_BLANK" href="https://clsu.edu.ph/"><img src="images/clients/clsu.png" alt="Central Luzon State University"></a></div>
+					<div class="oc-item"><a target="_BLANK" href="http://www.upm.edu.my"><img src="images/clients/upm.png" alt="University Putra Malaysia (UPM)"></a></div>
+					
+					{{--
+						<!--
 					<div class="oc-item"><a href="https://ipb.ac.id/"><img src="images/clients/ipb.png" alt="Institut pertanian Bogor"></a></div>
 					<div class="oc-item"><a href="http://www.pertanian.go.id/"><img src="images/clients/pertanian.png" alt="Ministry of Agriculture of Republic of Indonesia"></a></div>
 					<div class="oc-item"><a href="http://www.menlhk.go.id/"><img src="images/clients/klhk.png" alt="Ministry of Environment and Forestry of Republic of Indonesia"></a></div>
 					
 					<div class="oc-item"><a href="https://www.iucn.org"><img src="images/clients/iucn.png" alt="International Union for Conservation of Nature and Natural Resources (IUCN)"></a></div>
-					<div class="oc-item"><a href="www.upm.edu.my"><img src="images/clients/upm.png" alt="University Putra Malaysia (UPM)"></a></div>
 					<div class="oc-item"><a href="https://www.wwf.or.id/en/"><img src="images/clients/wwf.png" alt="World Wide Fund (WWF) Indonesia"></a></div>
 					<div class="oc-item"><a href="https://www.nature.or.id/"><img src="images/clients/tnc.png" alt="The Nature Conservancy (TNC) Indonesia"></a></div>
 					<div class="oc-item"><a href="www.conservation.org/global/indonesia/Pages/beranda.aspx"><img src="images/clients/ci.png" alt="Conservation International (CI) Indonesia"></a></div>
 					<div class="oc-item"><a href="https://www.bioversityinternational.org"><img src="images/clients/bi.png" alt="Bioversity International"></a></div>
 				-->
+				--}}
 				</div>
 			</div>
 		</div>
@@ -216,7 +219,7 @@
 		{
 			title: 'Abstract submissions deadline',
 			url: '{{ route('schedule') }}',
-			start: '2018-06-8'
+			start: '2018-06-08'
 		},
 		{
 			title: 'Accepted abstracts announcements',

@@ -29,7 +29,7 @@
 
 
             <div class="sectiontitle">
-                <h4>Registration Form</h4>
+                <h4>Information Form for: {{ Auth::user()->registration_id }}</h4>
             </div>
 
             <div class="row collapse">
@@ -73,8 +73,8 @@
 @endsection
 
 @section('script')
-<script type="text/javascript" src="{{asset('js/clone-form-td.js') }}"></script>
-<script type="text/javascript" src="{{asset('js/jquery.validate.min.js') }}"></script>
+<script type="text/javascript" src="{{asset('old/js/clone-form-td.js') }}"></script>
+<script type="text/javascript" src="{{asset('old/js/jquery.validate.min.js') }}"></script>
 
 
 <script type="text/javascript">

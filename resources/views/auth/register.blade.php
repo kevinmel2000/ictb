@@ -47,7 +47,7 @@
                         <legend><h6>Identification</h6></legend>
                         <div class="row">
                          <form method="post" action="{{ route('register') }}" id="contactform">
-                            @csrf
+                            {{ csrf_field() }}
                             <label for="error" style="color:#F00; padding-bottom:5px;"></label>
                              <div class="twelve columns">
                                 <h5>Main author, Exhibitor, or Participant Only</h5>
@@ -71,7 +71,9 @@
                                     <div class="twelve columns">
                                         <select name="typeparti">
                                             @foreach ($participantType as $pt)
-                                            <option value="{{ $pt->id }}" selected>{{ $pt->type }}</option>
+                                            @if($pt->type == "Author")
+                                                <option value="{{ $pt->id }}" selected>{{ $pt->type }}</option>
+                                            @endif
                                             @endforeach
                                         </select>
                                     </div>

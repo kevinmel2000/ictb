@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.web')
 
 @section('content')
 <div class="container">
@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.request') }}">
-                        @csrf
+                        {{ csrf() }}
 
                         <input type="hidden" name="token" value="{{ $token }}">
 

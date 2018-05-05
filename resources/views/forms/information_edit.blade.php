@@ -4,7 +4,7 @@
                         <fieldset>
                             <legend><h6>Other Information</h6></legend>
                             <div class="row">
-                                    @csrf
+                                    {{ csrf_field() }}
                                     <div class="ten columns">
                                          <label for="error" style="color:#F00; padding-bottom:5px;"></label>
                                     @if ($errors->any())
