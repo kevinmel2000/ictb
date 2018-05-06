@@ -93,6 +93,32 @@ class HomeController extends Controller
  }
 
 
+    public function updateApplication(Request $request){
+     $validatedData = $request->validate([
+        'cb_typeappli' => 'required',
+        'subtheme' => 'required',
+        'paper_title' => 'required|max:255',
+        'paper_abstract' => 'required|max:1500',
+        'paper_keywords' => 'required|max:255',
+        'rd_ftime' => 'required',
+        'rd_pub' => 'required',
+    ]);
+
+     $app = Application::where('participant_id', '=', Auth::user()->id)->first();
+     $app->apptype_id = $request->cb_typeappli;
+     $app->subtheme_id = $request->subtheme;
+     $app->title = $request->paper_title;
+     $app->abstract = $request->paper_abstract;
+     $app->keyword = $request->paper_keywords;
+     $app->firstsubmit = $request->rd_ftime;
+     $app->publication_id = $request->rd_pub;
+
+     $app->save();
+
+     return redirect()->route('home');
+ }
+
+
  public function information(){
     $organizationType = Organization::all();
     $countries = Country::orderBy('country_name', 'asc')->get();
@@ -105,7 +131,7 @@ class HomeController extends Controller
 
 public function updateInfo(Request $request){
 
-     $user = User::find(Auth::user()->id);
+     $user = Auth::user();
      $user->gender = $request->rd_gender;
      $user->student = $request->rd_student;
 
@@ -156,13 +182,11 @@ public function storeInfo(Request $request){
      //jika student minta upload kartu identitas (wajib)
      if($user->student == "Yes"){
         $file = $request->file('file_upload');
-        
             $name = str_slug($user->firstname." ".$user->lastname).".".$file->getClientOriginalExtension();
             $path = $file->storeAs(
                 'public/studentid', $name
             );
             $user->studentid = $name;
-        
      }
 
      
@@ -190,8 +214,7 @@ public function storeInfo(Request $request){
 
 public function confirmPayment(Request $request){
     $validatedData = $request->validate([
-        'file_upload' => 'sometimes|required|file|max:2000'
-       
+        'file_upload' => 'sometimes|required|file|max:2000'       
     ]);
 
     $user = Auth::user();

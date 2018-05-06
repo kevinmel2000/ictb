@@ -48,7 +48,7 @@
                     
     <blockquote>
 
-                    Please pay for the amount of {{ $user->payment }}, to: 
+                    Please pay for the amount of <strong>{{ $user->payment }}</strong>, to: 
                     @if($isForeign)
                         <br/>SEAMEO BIOTROP
                         <br/>No. 0003890624
@@ -64,7 +64,8 @@
                         <br/>West Java, Indonesia      
                         <br/>SWIFT CODE: BNINIDJABGR
                     @endif
-
+                    <br/>
+                    <br/>
                     <p>After you have completed the payment, please upload your receipt here:</p> 
                     <form class="frm_regstep3" method="post" action="{{ route('confirmPayment') }}" id="infoform" enctype="multipart/form-data">
                         {{ csrf_field() }}
@@ -196,6 +197,8 @@
 </div>
 @endsection
 
+
+@if(!empty($user->payment))
 @section('script')
 <script type="text/javascript" src="{{asset('old/js/clone-form-td.js') }}"></script>
 <script type="text/javascript" src="{{asset('old/js/jquery.validate.min.js') }}"></script>
@@ -205,67 +208,12 @@
 
     $(document).ready(function()
     {
-        $(".rd_student").change(function()
-        {
-            var id=$(this).val();
-
-            if(id == "Yes"){
-                $.ajax
-                ({
-                    type: "GET",
-                    url: "{{ route('component', 'idstudent') }}",
-                    cache: false,
-                    success: function(html)
-                    {
-                        $("#pictureid").show();
-                        $("#pic_student_id").html(html);
-                    }
-                });
-            }else{
-                $("#pictureid").hide();
-                $("#pic_student_id").html("");
-            }
-
-        });
-        //ajax for fundsupport
-        $(".fundsupport").change(function()
-        {
-            var id=$(this).val();
-
-            if(id == "Yes"){
-                id = "havesupport";
-            }else{
-                id = "nosupport";
-            }
-
-            $.ajax
-            ({
-                type: "GET",
-                url: "{{ route('component', '') }}/"+id,
-                cache: false,
-                success: function(html)
-                {
-                    $("#fundsupportholder").html(html);
-                }
-            });
-
-            $("#fundsupportholder").html("");
-            
-
-        });
-
 
         // validate on keyup and submit
         $("#infoform").validate({
             rules: {
-                txt_fsupport: {
+                file_upload: {
                     required: true,
-                }, tx_contribution: {
-                    required: true,
-                }, file_upload: {
-                    @if(empty($user))
-                    required: true,
-                    @endif
                     extension: "jpeg, jpg, png, pdf", 
                     filesize: 2300000
                 }, messages:{
@@ -274,9 +222,7 @@
                         accept:"Please upload .jpg or .png or .pdf file of notice.",
                         required:"Please upload file."
                     }
-                }, organi: {
-                    required: true,
-                },
+                }, 
 
             },
 
@@ -285,11 +231,7 @@
         });
 
 
-        $(".fundsupport:checked").change();
-        $(".rd_student:checked").change();
     });
-
-
 </script>
-
 @endsection
+@endif

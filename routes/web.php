@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::post('/checkmail', 'AJAXController@checkmail')->name('checkmail');
 Route::post('/checksubtheme', 'AJAXController@checksubtheme')->name('checksubtheme');
 Route::post('/storeapp', 'HomeController@storeApplication')->name('storeapp');
+Route::post('/updateapp', 'HomeController@updateApplication')->name('updateapp');
 Route::post('/storeinfo', 'HomeController@storeInfo')->name('storeinfo');
 Route::post('/updateinfo', 'HomeController@updateInfo')->name('updateinfo');
 Route::get('/home', 'HomeController@index')->name('home');
@@ -28,6 +29,12 @@ Route::post('/confirmpayment', 'HomeController@confirmPayment')->name('confirmPa
 Route::group(['middleware' => ['payment']], function () {
     Route::get('/application', 'HomeController@application')->name('application');
 	Route::get('/information', 'HomeController@information')->name('information');
+});
+
+Route::group(['middleware' => ['admin']], function () {
+    Route::get('/listpeserta', 'AdminController@peserta')->name('listpeserta');
+
+    Route::get('/listauthor', 'AdminController@author')->name('listauthor');
 });
 
 

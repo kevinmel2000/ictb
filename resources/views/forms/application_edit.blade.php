@@ -1,6 +1,6 @@
 
                     
-                          <form method="post" action="{{ route('storeapp') }}" id="contactform">
+                          <form method="post" action="{{ route('updateapp') }}" id="contactform">
                         
                         <legend><h6>Update Application Data</h6></legend>
                         <div class="row">
@@ -141,7 +141,7 @@
                             <div class="row">
                                 <div class="six columns">
                                     <p><br/>
-                                        <input type="submit" id="submit" class="readmore" value="Submit">
+                                        <input type="submit" id="submit" class="readmore" value="Update Application">
                                     </p>
                                 </div>
                             </div>
