@@ -48,11 +48,7 @@
             </tr>
             <tr>
                 <td>Deadline for abstract submissions</td>
-                <td>8  June  2018</td>
-            </tr>
-            <tr>
-                <td><strong>Evaluation and</strong> Selection of abstracts</td>
-                <td>16 May – 8 June 2018</td>
+                <td>31 May 2018</td>
             </tr>
             <tr>
                 <td>Announcement of accepted abstracts for oral and poster    presentations</td>
@@ -99,7 +95,7 @@
         </div>
 
         <ol style="margin-left: 30px">
-          <li>Authors who want to publish their full paper on  BIOTROPIA Journal, will be provided a chapter of Thematic Issue and should  follow the further review process by BIOTROPIA journal editor.</li>
+          <li>1.  Authors, who will freely publish their full paper on BIOTROPIA Journal will be provided a chapter of Thematic Issue and should follow the further review process by BIOTROPIA journal editor.</li>
           <li>Authors will be provided username, password, and  registration number when completed the online registration process and have  access to edit their paper. </li>
           <li>Upon the acceptance of their abstracts as oral  or poster presentation, Authors can submit their full papers by login to their  accounts.</li>
           <li>An icon to upload their abstracts will be  provided in the account.</li>
@@ -120,6 +116,7 @@
           <li>Figures and illustrations</li>
           <li>Tables and captions</li>
           </ul>
+          
         </ol>
         
         <p>

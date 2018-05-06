@@ -25,9 +25,9 @@
                 <li>Deadline for exhibitor registration is August 10, 2018 at 23:59 GMT+7 </li>
                     <li>Organizing Committee will contact the applicant by e-mail to submit their exhibition concept and product.</li>
                     <li>Due to limitation in exhibition space, selection of exhibitor will be conducted.</li>
-                    <li>Announcement of accepted exhibitors is July 30, 2015 (1<sup>st</sup> call) and August 30, 2015 (2<sup>nd</sup> call).</li>
+                    <li>Announcement of accepted exhibitors is August 13, 2018 (1<sup>st</sup> call)</li>
                     <li>Exhibitors name and space will be announced in the program only after the registration for exhibitor is paid.</li>
-                    <li>Deadline of payment for exhibition is August 30, 2015 (1<sup>st</sup> call) and September 15, 2015 (2<sup>nd</sup> call), based on the <a href="index.php?mode=guideline#registration_fee" title="Registration Fee" target="_blank"><strong>Registration Fee</strong></a> table.</li>
+                    <li>Deadline of payment for exhibition is August 24, 2018 (1<sup>st</sup> call) and September 15, 2018 (2<sup>nd</sup> call), based on the <a href="index.php?mode=guideline#registration_fee" title="Registration Fee" target="_blank"><strong>Registration Fee</strong></a> table.</li>
                 </ul>
             <br/>
             <br/>

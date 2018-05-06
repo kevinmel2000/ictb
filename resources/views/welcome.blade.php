@@ -16,10 +16,10 @@
 					<img src="{{ asset("images/logo-big.png") }}" class="img-responsive"/>
 				</div>
 				--}}
-				<h1 style="color:#eee; text-shadow: 1px 1px 1px rgba(0,0,0,.15);">3<sup>rd</sup> International Conference on Tropical Biology</h1>
-				<h4 style="color:#fff">"Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna"</h3>
+				<h1 style="color:#6c4abd; text-shadow: 1px 1px 1px rgba(255,255,255,.65);">3<sup>rd</sup> International Conference on<br/>Tropical Biology</h1>
+				<h4 style="color:#6c4abd;text-shadow: 1px 1px 1px rgba(255,255,255,.65);">"Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna"</h3>
 
-				<h4 style="color:#fff">20 - 21 September 2018, Bogor, Indonesia</h5>
+				<h4 style="color:#6c4abd;text-shadow: 1px 1px 1px rgba(255,255,255,.65);">20 - 21 September 2018, Bogor, Indonesia</h5>
 			</div>
 
 			<div class="center topmargin-lg">
