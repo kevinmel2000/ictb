@@ -140,7 +140,7 @@
         <br/>Prof Dr Ani Mardiastuti, Faculty of Forestry, Institut Pertanian Bogor, Indonesia<br/></li>
 
         <li><strong>Approaches, Technologies, and Innovations in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna.</strong>
-          <br/>Prof. Chiu Fook Tim,  National University of Singapore<br/></li>
+          <br/>Prof. Chew Fook Tim,  National University of Singapore<br/></li>
 
           <li><strong>
             Socio-economic, Cultural, and Ethical Aspects in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna
