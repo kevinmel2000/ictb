@@ -33,7 +33,7 @@
 
 									@guest
 									<li>
-										<a href="{{ route('register') }}">Registration</a>
+										<a href="{{ route('register') }}">Abstract Submission</a>
 										<ul>
 											<li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
 											<li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>

@@ -61,6 +61,10 @@
 
 
         </table>
+
+
+        <a href="{{ route('register') }}" class="button button-3d button-red button-rounded button-xlarge">Submit Your Abstract Now</a>
+      
 <p></p>
  <div class="fancy-title title-double-border">
             <h4><span>Extended Abstract Preparation</span></h4>

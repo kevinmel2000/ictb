@@ -136,11 +136,25 @@
         <br/>
       </li>
       
-      <li><strong>Socio-economic, Cultural, and Ethical Aspects in Conservation, Enhancement and Sustainable Use of Indigenous Fauna</strong>
-        <br/>Prof Alison Martin, PhD, The Livestock Conservancy, USA<br/></li>
+      <li><strong>Diversity and Resiliency of Indigenous Tropical Flora and Fauna and Their Ecosystems</strong>
+        <br/>Prof Dr Ani Mardiastuti, Faculty of Forestry, Institut Pertanian Bogor, Indonesia<br/></li>
 
         <li><strong>Approaches, Technologies, and Innovations in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna.</strong>
           <br/>Prof. Chiu Fook Tim,  National University of Singapore<br/></li>
+
+          <li><strong>
+            Socio-economic, Cultural, and Ethical Aspects in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna
+          </strong><br/>
+          Prof Dr Clemens B.A. Wollny, International Livestock Research Institute
+        </li>
+
+          <li><strong>     
+            Approaches, Technologies, and Innovations in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna.
+
+          </strong><br/>
+          Prof Chew Fook Tim, National University of Singapore
+        </li>
+
         </td>
       </tr>
       <tr>
