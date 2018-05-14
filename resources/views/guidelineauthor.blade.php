@@ -48,7 +48,7 @@
             </tr>
             <tr>
                 <td>Deadline for abstract submissions</td>
-                <td>31 May 2018</td>
+                <td>8 June 2018</td>
             </tr>
             <tr>
                 <td>Announcement of accepted abstracts for oral and poster    presentations</td>
