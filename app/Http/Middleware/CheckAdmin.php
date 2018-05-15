@@ -18,7 +18,7 @@ class CheckAdmin
     {
         $user = Auth::user();
         
-        if($user->id != 1){
+        if($user->id != 1 || $user->id != 1){
             return redirect('welcome');
         }
 
