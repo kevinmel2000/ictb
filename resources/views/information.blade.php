@@ -18,10 +18,6 @@
   src="https://www.facebook.com/tr?id=2031713633813639&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
-
-<script>
-  fbq('track', 'CompleteRegistration');
-</script>
 @endsection
 
 @section('content')
@@ -95,6 +91,9 @@
 @endsection
 
 @section('script')
+<script>
+  fbq('track', 'CompleteRegistration');
+</script>
 <script type="text/javascript" src="{{asset('old/js/clone-form-td.js') }}"></script>
 <script type="text/javascript" src="{{asset('old/js/jquery.validate.min.js') }}"></script>
 
@@ -103,6 +102,7 @@
 
     $(document).ready(function()
     {
+
         $(".rd_student").change(function()
         {
             var id=$(this).val();
