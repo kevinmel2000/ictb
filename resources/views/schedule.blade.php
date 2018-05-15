@@ -148,13 +148,6 @@
           Prof Dr Clemens B.A. Wollny, International Livestock Research Institute
         </li>
 
-          <li><strong>     
-            Approaches, Technologies, and Innovations in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna.
-
-          </strong><br/>
-          Prof Chew Fook Tim, National University of Singapore
-        </li>
-
         </td>
       </tr>
       <tr>

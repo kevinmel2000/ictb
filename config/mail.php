@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'bio-ictb@biotrop.org'),
+        'address' => env('MAIL_FROM_ADDRESS', 'haritz@biotrop.org'),
         'name' => env('MAIL_FROM_NAME', 'ICTB Secretariat'),
     ],
 
