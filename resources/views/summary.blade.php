@@ -126,6 +126,7 @@
                 </fieldset>
 
 
+@if($user->type_participant_id == 1)
                      <fieldset>
                             <legend><h6>Application Information</h6></legend>
                             <div class="row">
@@ -150,6 +151,7 @@
 
                     
                 </fieldset>
+@endif
 
 
                 @if($user->payment == NULL)
