@@ -16,9 +16,11 @@ class CheckAdmin
      */
     public function handle($request, Closure $next)
     {
-        $user = Auth::user();
+        if(Auth::check() == false) return redirect('welcome');
+
+        $id = Auth::user()->id;
         
-        if($user->id != 1 || $user->id != 1){
+        if($id != 1 || $id != 1){
             return redirect('welcome');
         }
 
