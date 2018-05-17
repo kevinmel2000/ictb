@@ -40,9 +40,9 @@
 
 			<div class="center topmargin-lg">
 				<a href="{{ route('guidelineauthor') }}" class="button button-3d button-red button-rounded button-xlarge">Call for Ext. Abstract</a>
-				{{--
+			
 				<span class="d-none d-md-inline-block"> - OR - </span>
-				<a href="{{ route('about') }}" class="button button-3d button-white button-light button-rounded button-xlarge">Read Details</a> --}}
+				<a href="{{ route('register') }}" class="button button-3d button-white button-light button-rounded button-xlarge">Register</a> 
 			</div>
 		</div>
 	</div>

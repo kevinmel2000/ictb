@@ -1,6 +1,6 @@
 
                     
-                          <form method="post" action="{{ route('updateapp') }}" id="contactform">
+                          <form method="post" action="{{ route('updateapp') }}" id="contactform"  enctype="multipart/form-data">
                         
                         <legend><h6>Update Application Data</h6></legend>
                         <div class="row">
@@ -72,7 +72,7 @@
 
                                 
                                 <label>Title</label>
-                                <span style="font-size:1em; color:#09F"><span id="chars" style="font-weight:bold">150</span> characters left (space and punctuation included)</span>
+                                <span style="font-size:1em; color:#09F"><span id="chars" style="font-weight:bold">15</span> words left</span>
                                 <div class="row collapse">
                                     <div class="eight columns">
                                         <input type="text" name="paper_title" id="paper_title" placeholder="Title" value="{{ old('paper_title', $application->title) }}" class="smoothborder" required/>
@@ -81,12 +81,17 @@
                                 </div>
 
 
-                                <label>Abstract</label>
-                                <span style="font-size:1em; color:#09F"><span id="abstract_chars" style="font-weight:bold">2500</span> characters left (space and punctuation included)</span>
+                                <label>Extended Abstract</label>
+                                  <strong><a href="{{ asset('storage/abstract/'.$application->abstract) }}" target="_BLANK">Current Ext. Abstract</a></strong>
+                                    <br/>
+                                  
+                                <span style="font-size:1em; color:#09F">Update extended abstract by uploading new files</span>
                                 <div class="row collapse">
                                     <div class="eight columns">
-                                     <textarea name="paper_abstract" id="paper_abstract" class="smoothborder ctextarea" rows="8" placeholder="Contribution" value="" required>{{ old('paper_abstract', $application->abstract) }}</textarea>
+                                            <!--<input name="file_upload" id="file_upload" type="file" value="Upload File" required/> -->
+                                            <input class="smoothborder" id="paper_abstract" name="paper_abstract" multiple="" accept=".doc, .docx" type="file">
                                  </div>
+
                              </div>
 
                              <label>Keywords</label>

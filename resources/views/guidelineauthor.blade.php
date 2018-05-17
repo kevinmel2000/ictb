@@ -15,57 +15,7 @@
 
     <div class="container clearfix">
 
-
-      <div class="fancy-title title-double-border">
-        <h4><span>Abstract Preparation</span></h4>
-      </div>
-
-      <span>
-        <ul style="margin-left:30px">
-          <li>Authors should clearly indicate if their  abstracts are either for oral or poster presentation or both.</li>
-          <li>Authors can submit a maximum of two abstracts  for both either oral or poster presentations.</li>
-          <li>Abstract must be written in English.</li>
-          <li>Abstract title should be clear and contains a  maximum of 15 words.</li>
-          <li>Abstracts should be within 300 words or 2500  characters describing the relevance of the research, materials and methods  used, significant results, conclusion and implications.</li>
-          <li>Abstract keywords should be limited to five  words.</li>
-        </ul>
-
-      </span>
-      <p></p>
-      <table class="table table-striped">
-
-        <thead>
-          <td><strong>Detail</strong></td>
-          <td><strong>Date</strong></td>
-        </thead>
-        <tr>
-          <td>Call for abstracts</td>
-          <td>1 May - 18 Jun 2018</td>
-        </tr>
-        <tr>
-          <td>Registration for participants and exhibitors starts</td>
-          <td>16 May 2018 </td>
-        </tr>
-        <tr>
-          <td>Deadline for abstract submissions</td>
-          <td>8 June 2018</td>
-        </tr>
-        <tr>
-          <td>Announcement of accepted abstracts for oral and poster    presentations</td>
-          <td>25 June 2018</td>
-        </tr>
-        <tr>
-          <td>Deadline for    submission of extended abstracts for oral and poster presentations</td>
-          <td>10 August 2018</td>
-        </tr>
-
-
-      </table>
-
-
-      <a href="{{ route('register') }}" class="button button-3d button-red button-rounded button-xlarge">Submit Your Abstract Now</a>
-      
-      <p></p>
+     <p></p>
       <div class="fancy-title title-double-border">
         <h4><span>Requirements for Extended Abstract Preparation</span></h4>
       </div>
@@ -91,6 +41,51 @@
       </ul>
 
 
+ 
+
+       <table class="table table-bordered table-striped">
+      <thead>
+        <th>
+         <strong>Detail</strong></th>
+         <th><strong>Date</strong></th>
+       </thead>
+       <tr>
+        <td>Call for abstracts</td>
+        <td>16 April – 25 June 2018 </td>
+      </tr>
+      <tr>
+        <td>Announcement of accepted abstracts for oral and poster presentations</td>
+        <td>25 June 2018</td>
+      </tr>
+      <tr>
+        <td>Evaluation and Selection of Extended Abstracts </td>
+        <td>26 June - 24 July 2018 </td>
+      </tr>
+      <tr>
+        <td>Announcement of Accepted Extended Abstracts for Oral/Poster Presentations </td>
+        <td>25 July 2018</td>
+      </tr>
+      <tr>
+        <td>Deadline for registration and payment for paper and poster presenters</td>
+        <td>15 September 2015</td>
+      </tr>
+      <tr>
+        <td>Deadline for uploading oral presentation files</td>
+        <td>3 September 2018</td>
+      </tr>
+      <tr>
+        <td>Deadline for full paper submission</td>
+        <td> - </td>
+      </tr>
+
+      <tr>
+        <td><strong>Conference</strong></td>
+        <td><strong>20-21 September 2018</strong></td>
+      </tr>
+    </table>
+
+      <a href="{{ route('register') }}" class="button button-3d button-red button-rounded button-xlarge">Submit Your Abstract Now</a>
+      
 
       <div class="fancy-title title-double-border">
         <h4><span>Oral Presentation</span>  </h4>

@@ -1,5 +1,5 @@
 
-                          <form method="post" action="{{ route('storeapp') }}" id="contactform">
+                          <form method="post" action="{{ route('storeapp') }}" id="contactform"  enctype="multipart/form-data">
                         <legend><h6>Application</h6></legend>
                         <div class="row">
                          
@@ -65,11 +65,14 @@
                                 </div>
 
 
-                                <label>Abstract</label>
-                                <span style="font-size:1em; color:#09F"><span id="abstract_chars" style="font-weight:bold">2500</span> characters left (space and punctuation included)</span>
+                                <label>Extended Abstract</label>
+                                <span style="font-size:1em; color:#09F">Upload your extended abstract here, you will have the chance to edit the file until 25 June 2018</span>
                                 <div class="row collapse">
                                     <div class="eight columns">
-                                     <textarea name="paper_abstract" id="paper_abstract" class="smoothborder ctextarea" rows="8" placeholder="Contribution" value="{{ old('paper_abstract') }}" required></textarea>
+ 
+                                            <!--<input name="file_upload" id="file_upload" type="file" value="Upload File" required/> -->
+                                            <input class="smoothborder" id="paper_abstract" name="paper_abstract" multiple="" accept=".doc, .docx" type="file">
+                                   
                                  </div>
                              </div>
 

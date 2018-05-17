@@ -79,7 +79,6 @@
 
 @section('script')
 <script type="text/javascript" src="{{asset('old/js/clone-form-td.js') }}"></script>
-<script type="text/javascript" src="{{asset('old/js/jquery.tinylimiter.js') }}"></script>
 <script type="text/javascript" src="{{asset('old/js/jquery.validate.min.js') }}"></script>
 
 
@@ -115,6 +114,20 @@
         $("#theme").change();
     });
 
+/*
+ * 
+ * Textarea Word Count Jquery Plugin 
+ * Version 1.0
+ * 
+ * Copyright (c) 2008 Roshan Bhattarai
+ * website : http://roshanbh.com.np
+ * 
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ * 
+*/
+
     $().ready(function() {
         // validate on keyup and submit
         $("#contactform").validate({
@@ -122,7 +135,17 @@
                 paper_title: {
                     required: true,
                 }, paper_abstract: {
+                    @if(!isset($application))
                     required: true,
+                    @endif
+                    extension: "doc, docx", 
+                    filesize: 5300000
+                }, messages:{
+                    file_upload:{
+                        filesize:" file size must be less than 2 MB.",
+                        accept:"Please upload .doc or .docx abstract file.",
+                        required:"Please upload extended abstract file."
+                    }
                 }, paper_keywords: {
                     required: true,
                 }, 
@@ -134,15 +157,25 @@
     });
 
 
-    $(document).ready( function() {
-        var elem = $("#chars");
-        $("#paper_title").limiter(150, elem);
-    });
+  
+   $(function() {
+    var maxWords = 15;
+    var wordCounts = {};
+    $("#paper_title").keyup(function() {
+        var matches = this.value.match(/\b/g);
+        wordCounts[this.id] = matches ? matches.length / 2 : 0;
+        var finalCount = 0;
+        $.each(wordCounts, function(k, v) {
+            finalCount += v;
+        });
+        $('#chars').text(15-finalCount);
+        console.log(finalCount);
+        if(finalCount > maxWords){
+            $("#paper_title").val(paper_title.value.slice(0,-2));
+        };
+    }).keyup();
+});
 
-    $(document).ready( function() {
-        var elem = $("#abstract_chars");
-        $("#paper_abstract").limiter(2500, elem);
-    });
 </script>
 
 @endsection

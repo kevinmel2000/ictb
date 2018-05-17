@@ -82,10 +82,24 @@ class HomeController extends Controller
      $app->apptype_id = $request->cb_typeappli;
      $app->subtheme_id = $request->subtheme;
      $app->title = $request->paper_title;
-     $app->abstract = $request->paper_abstract;
      $app->keyword = $request->paper_keywords;
      $app->firstsubmit = $request->rd_ftime;
      $app->publication_id = $request->rd_pub;
+
+
+        $app->abstract = "";
+     //jika student minta upload kartu identitas (wajib)
+
+    $file = $request->file('paper_abstract');
+    if(!empty($file)){
+        $name = str_slug($app->title).".".$file->getClientOriginalExtension();
+        $path = $file->storeAs(
+            'public/abstract', $name
+        );
+        $app->abstract = $name;
+    }
+ 
+
 
      $app->save();
 
@@ -98,7 +112,7 @@ class HomeController extends Controller
         'cb_typeappli' => 'required',
         'subtheme' => 'required',
         'paper_title' => 'required|max:255',
-        'paper_abstract' => 'required|max:1500',
+        'paper_abstract' => 'sometimes|required|max:1500',
         'paper_keywords' => 'required|max:255',
         'rd_ftime' => 'required',
         'rd_pub' => 'required',
@@ -108,10 +122,20 @@ class HomeController extends Controller
      $app->apptype_id = $request->cb_typeappli;
      $app->subtheme_id = $request->subtheme;
      $app->title = $request->paper_title;
-     $app->abstract = $request->paper_abstract;
      $app->keyword = $request->paper_keywords;
      $app->firstsubmit = $request->rd_ftime;
      $app->publication_id = $request->rd_pub;
+
+     //jika student minta upload kartu identitas (wajib)
+
+    $file = $request->file('paper_abstract');
+    if(!empty($file)){
+        $name = str_slug($app->title).".".$file->getClientOriginalExtension();
+        $path = $file->storeAs(
+            'public/abstract', $name
+        );
+        $app->abstract = $name;
+    }
 
      $app->save();
 
