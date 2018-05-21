@@ -35,7 +35,9 @@
     <td><strong>{{ $usr->firstname.' '.$usr->lastname }}</strong></td>
     <td><strong>{{ $usr->email }}</strong></td>
     <td><strong>{{ $usr->organization }}</strong></td>
+      @if(isset($usr->country))
     <td><strong>{{ $usr->country->country_name }}</strong></td>
+    @endif
     <td><strong>{{ $usr->student }}</strong></td>
     <td><strong>{{ $usr->allergies }}</strong></td>
     <td><strong>{{ $usr->payment }}</strong></td>
