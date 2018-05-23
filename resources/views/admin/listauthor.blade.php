@@ -20,6 +20,7 @@
 
               <table class="table table-striped">
   <thead>
+    <td><strong>No</strong></td>
     <td><strong>Registration ID</strong></td>
     <td><strong>Name</strong></td>
     <td><strong>Email</strong></td>
@@ -28,19 +29,27 @@
     <td><strong>Student</strong></td>
     <td><strong>Allergies</strong></td>
     <td><strong>Payment</strong></td>
+    <td><strong>Abstract</strong></td>
   </thead>
+  <?php $count = 1;   ?>
   @foreach($user as $usr)
   <tr>
-    <td><strong>{{ $usr->registration_id }}</strong></td>
-    <td><strong>{{ $usr->firstname.' '.$usr->lastname }}</strong></td>
-    <td><strong>{{ $usr->email }}</strong></td>
-    <td><strong>{{ $usr->organization }}</strong></td>
+    <td>{{ $count }}<?php $count++; ?></td>
+    <td>{{ $usr->registration_id }}</td>
+    <td>{{ $usr->firstname.' '.$usr->lastname }}</td>
+    <td>{{ $usr->email }}</td>
+    <td>{{ $usr->organization }}</td>
     @if(isset($usr->country))
-    <td><strong>{{ $usr->country->country_name }}</strong></td>
+    <td>{{ $usr->country->country_name }}</td>
     @endif
-    <td><strong>{{ $usr->student }}</strong></td>
-    <td><strong>{{ $usr->allergies }}</strong></td>
-    <td><strong>{{ $usr->payment }}</strong></td>
+    <td>{{ $usr->student }}</td>
+    <td>{{ $usr->allergies }}</td>
+    <td>{{ $usr->payment }}</td>
+    @if(isset($usr->application))
+      <td><strong><a href="{{ url("storage/abstract/".$usr->application->abstract) }}">Abstract</a></strong></td>
+    @else
+      - 
+    @endif
   </tr>
   @endforeach
   </table>
