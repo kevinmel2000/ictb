@@ -38,7 +38,6 @@
                 <p>
                     Summary of all the information that you have entered earlier. Please make sure all information shown are correct before clicking on Confirmation Button.
                     <br/>
-                    <strong>You can only edit on abstract and extended abstract section after you have clicked the confirmation button.</strong>
                 </p>
 
             @else

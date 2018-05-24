@@ -1,4 +1,4 @@
-@extends('layouts.newweb')
+@extends('layouts.newwebmin')
 
 @section('content')
 <div class="container">

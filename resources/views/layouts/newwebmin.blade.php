@@ -9,6 +9,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="{{ asset("css/bootstrap.css") }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset("css/style.css") }}" type="text/css" />
+	<style>
+		
+.animsition-overlay,body:not(.no-transition) #wrapper{
+    position:relative;
+    opacity:100;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both
+}
+	</style>
 	<link rel="stylesheet" href="{{ asset("css/dark.css") }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset("css/font-icons.css") }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset("css/animate.css") }}" type="text/css" />
@@ -39,7 +48,7 @@
 						</a>
 					</div>
 <nav id="primary-menu">
-				@include('component/navbaradmin')
+				@include('component/navbar')
 			</nav>
 				</div>
 			</div>
@@ -102,10 +111,7 @@
 
 	<div id="gotoTop" class="icon-angle-up"></div>
 
-	<script src="{{ asset("js/jquery.js") }}"></script>
-	<script src="{{ asset("js/plugins.js") }}"></script>
 
-	<script src="{{ asset("js/functions.js") }}"></script>
 	@yield('script')
 </body>
 </html>
