@@ -5,7 +5,7 @@
 
 <section id="page-title">
     <div class="container clearfix">
-        <h1>List of Author</h1>
+        <h1>List of Participants</h1>
         
     </div>
 </section>
@@ -16,7 +16,7 @@
             <div class="container clearfix">
 
 
-                <p align="justify">The Conference theme, “Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna”, will cover the following sub-themes and topics:</p> 
+                <p align="justify">the list of participants:</p> 
 
               <table class="table table-striped">
   <thead>
@@ -37,7 +37,10 @@
     <td><strong>{{ $usr->organization }}</strong></td>
       @if(isset($usr->country))
     <td><strong>{{ $usr->country->country_name }}</strong></td>
+    @else
+    <td></td>
     @endif
+
     <td><strong>{{ $usr->student }}</strong></td>
     <td><strong>{{ $usr->allergies }}</strong></td>
     <td><strong>{{ $usr->payment }}</strong></td>
