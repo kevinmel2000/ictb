@@ -82,8 +82,14 @@
 
 
                                 <label>Extended Abstract</label>
-                                  <strong><a href="{{ asset('storage/abstract/'.$application->abstract) }}" target="_BLANK">Current Ext. Abstract</a></strong>
+                                <strong><a href="{{ asset('storage/abstract/'.$application->abstract) }}" target="_BLANK">Current Ext. Abstract</a></strong>
                                     <br/>
+
+                                    <a href="{{ route('download', 'abstracttemplate') }}" class="button button-3d button-green button-rounded button-medium">Download Extended Abstract Template</a>
+      <p></p>
+      
+
+                                  
                                   
                                 <span style="font-size:1em; color:#09F">Update extended abstract by uploading new files</span>
                                 <div class="row collapse">
