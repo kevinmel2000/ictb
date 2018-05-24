@@ -50,7 +50,7 @@ Route::get('/venue', 'PageController@venue')->name('venue');
 Route::get('/accomodation', 'PageController@accomodation')->name('accomodation');
 
 
-
+Route::get('/download/{filename}', 'PageController@download')->name('download');
 
 
 

@@ -35,6 +35,10 @@ class HomeController extends Controller
     public function index()
     {
         $participantType = Auth::user()->participantType;
+        if(Auth::user()->type_participant_id == 5){
+            return redirect()->route('listauthor');
+        }
+
         //habis daftar, isi information
         if(empty(Auth::user()->gender)){
                 return redirect()->route('information');

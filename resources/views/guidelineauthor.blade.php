@@ -29,6 +29,9 @@
         <li>Must have maximum of five (5) keywords<strong></strong></li>
       </ul>
       
+
+      <a href="{{ route('download', 'abstracttemplate') }}" class="button button-3d button-green button-rounded button-medium">Download Extended Abstract Template</a>
+      <p></p>
       <div class="fancy-title title-double-border">
         <h4><span>Requirements for Submission of Extended Abstract</span></h4>
       </div>
@@ -85,7 +88,7 @@
     </table>
 
       <a href="{{ route('register') }}" class="button button-3d button-red button-rounded button-xlarge">Submit Your Abstract Now</a>
-      
+      <p></p>
 
       <div class="fancy-title title-double-border">
         <h4><span>Oral Presentation</span>  </h4>

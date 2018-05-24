@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Storage;
 
 
 class PageController extends Controller
@@ -51,4 +52,18 @@ class PageController extends Controller
     public function accomodation(){
         return view('accomodation');
     }
+
+
+    
+    public function download($filename){
+        
+        if($filename == "abstracttemplate"){
+            return Storage::download('public/files/Extended Abstract Template - ICTB 2018.docx');
+        }else if($component == "havesupport"){
+            return view('component/havesupport', compact("user"));
+        }else if($component == "nosupport"){
+            return view('component/nosupport', compact("user"));
+        }
+    }
+
 }

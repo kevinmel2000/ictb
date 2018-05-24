@@ -71,8 +71,9 @@
                                     <div class="twelve columns">
                                         <select name="typeparti">
                                             @foreach ($participantType as $pt)
-                                    
+                                                @if($pt->id < 4)
                                                 <option value="{{ $pt->id }}" selected>{{ $pt->type }}</option>
+                                                @endif
                                             @endforeach
                                         </select>
                                     </div>

@@ -18,9 +18,9 @@ class CheckAdmin
     {
         if(Auth::check() == false) return redirect('welcome');
 
-        $id = Auth::user()->id;
+        $id = Auth::user()->type_participant_id;
         
-        if($id != 1 || $id != 1){
+        if($id != 5){
             return redirect('welcome');
         }
 
