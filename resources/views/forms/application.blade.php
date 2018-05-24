@@ -56,7 +56,7 @@
 
                                 
                                 <label>Title</label>
-                                <span style="font-size:1em; color:#09F"><span id="chars" style="font-weight:bold">150</span> characters left (space and punctuation included)</span>
+                                <span style="font-size:1em; color:#09F"><span id="chars" style="font-weight:bold">15</span> words left</span>
                                 <div class="row collapse">
                                     <div class="eight columns">
                                         <input type="text" name="paper_title" id="paper_title" placeholder="Title" value="{{ old('paper_title') }}" class="smoothborder" required/>

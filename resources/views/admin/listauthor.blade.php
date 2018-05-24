@@ -1,4 +1,4 @@
-@extends('layouts.newweb')
+@extends('layouts.newwebadmin')
 
 
 @section('content')
@@ -44,11 +44,16 @@
     @endif
     <td>{{ $usr->student }}</td>
     <td>{{ $usr->allergies }}</td>
+    @if(empty($usr->paymentConfirmation))
     <td>{{ $usr->payment }}</td>
+    @else
+    <td><a href="{{ url("storage/payment/".$usr->paymentConfirmation) }}"">{{ $usr->payment }}</a></td>
+    @endif
+
     @if(isset($usr->application))
       <td><strong><a href="{{ url("storage/abstract/".$usr->application->abstract) }}">Abstract</a></strong></td>
     @else
-      - 
+     <td></td>
     @endif
   </tr>
   @endforeach

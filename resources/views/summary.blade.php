@@ -43,7 +43,7 @@
 
             @else
                 @include('component/stepsdisabled')
-
+<!--
                 @if(empty($user->paymentConfirmation))
                     
     <blockquote>
@@ -77,7 +77,7 @@
                 <h4>Thank you for your payment</h4><br/>See you at the conference<br/>
                 <img src="{{ asset('storage/payment').'/'.$user->paymentConfirmation }}" />
                 @endif
-
+-->
             @endif
 
             <!-- FORMS-->
@@ -145,6 +145,8 @@
                                 <label>Keywords: <br/><strong>{{ $application->keyword }}</strong></label>
                                 
                                 <label>Publication Type: <strong>{{ $application->publicationtype->type }}</strong></label>
+
+                                <a href="{{ route('application') }}">Edit Application</a>
                             <!-- ------- -->                            
                         </div>
                     </div>
