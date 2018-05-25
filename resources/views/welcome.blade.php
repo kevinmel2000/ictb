@@ -147,6 +147,7 @@
 					</div>
 				</div>
 			</div>
+			<!--
 			<div class="col_one_third nobottommargin col_last">
 				<div class="team">
 					<div class="team-image">
@@ -158,6 +159,7 @@
 					</div>
 				</div>
 			</div>
+		-->
 			<div class="clear"></div>
 		</div>
 
