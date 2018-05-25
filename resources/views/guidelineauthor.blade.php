@@ -113,16 +113,16 @@
       </div>
 
       <ul style="margin-left: 30px">
-        <li>Each poster must be prepared as standing banner  60 x 160 cm, portrait style, and brought on the day of the Seminar.</li>
-        <li>Posters which are not a standing banner as the  prescribed-size will not be allowed to be displayed.</li>
-        <li>Poster must contain information on the  following: poster title, names of authors, institution and e-mail address of  each author, introduction, method, result &amp; discussion, conclusion,  reference, acknowledgment (if necessary).</li>
-        <li>Poster must also show the Registration number of  the poster, the Conference name and Theme, Conference Organizer (SEAMEO  BIOTROP), and place and date of conference (SEAMEO BIOTROP, Bogor-Indonesia,  20-21 September 2018).</li>
-        <li>The Organizing Committee will only provide space  for standing banner, therefore the poster presenters must bring their own  standing banner frames/legs.</li>
-        <li>All posters must be placed in their  corresponding plot. Registration Number of each poster will be posted on the  plot.</li>
+        <li>Each poster must be prepared in A0 size or 841 x 1189 mm, portrait style, and brought on the day of the Seminar.</li>
+        <li>Posters which are not in the correct size as the  prescribed-size will not be allowed to be displayed.</li>
+        <li>Poster must contain information on the following: poster title, names of authors, institution and e-mail address of  each author, introduction, method, result &amp; discussion, conclusion, reference, acknowledgment (if necessary).</li>
+        <li>Poster must also show the Registration number of the poster, the Conference name and Theme, Conference Organizer (SEAMEO  BIOTROP), and place and date of conference (SEAMEO BIOTROP, Bogor-Indonesia, 20-21 September 2018).</li>
+        <li>The Organizing Committee will only provide space for standing banner, therefore the poster presenters must bring their own  standing banner frames/legs.</li>
+        <li>All posters must be placed in their corresponding plot. Registration Number of each poster will be posted on the  plot.</li>
         <li>Posters must be placed on the designated area on  19 September 2018 before the opening ceremony.</li>
-        <li>Poster would be displayed throughout the  Conference dates.</li>
-        <li>Posters should be removed by the presenters  after the Conference is finished or will be disposed-off by the Organizing  Committee.</li>
-        <li>Authors should attend their posters at the  scheduled time slot: at lunch time and refreshment break time.</li>
+        <li>Poster would be displayed throughout the Conference dates.</li>
+        <li>Posters should be removed by the presenters after the Conference is finished or will be disposed-off by the Organizing  Committee.</li>
+        <li>Authors should attend their posters at the scheduled time slot: at lunch time and refreshment break time.</li>
       </ul>
 
       <div class="fancy-title title-double-border">
