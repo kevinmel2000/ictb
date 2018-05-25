@@ -80,11 +80,11 @@
         <td>16 May - 10 August 2018</td>
       </tr>
       <tr>
-        <td>Announcement  of accepted exhibitors</td>
+        <td>Announcement of accepted exhibitors</td>
         <td>13 August 2018</td>
       </tr>
       <tr>
-        <td>Deadline  of payment for exhibition </td>
+        <td>Deadline of payment for exhibition </td>
         <td>15 September 2018</td>
       </tr>
       <tr>
