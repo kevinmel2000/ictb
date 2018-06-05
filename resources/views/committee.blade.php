@@ -36,6 +36,8 @@
                Prof Dr Bambang Purwantara, SEAMEO BIOTROP
                <br/>Prof Dr Azhar Kasim, Faculty of Agriculture, University Putra Malaysia
                <br/>Prof Dr Muhamed Zakaria Hussin, Faculty of Forestry, University Putra Malaysia
+               <br/>Dr Hasliza Abu Hassim, Faculty of Veterinary Medicine, University Putra Malaysia
+               <br/>Prof Dr Mohd Zamri Saad, Faculty of Veterinary Medicine, University Putra Malaysia
                <br/>Prof Dr Hwang Shaw Yhi, Faculty of Agriculture, National Chung Hsing University, Taiwan
                <br/>Prof Willie Abasalo, Faculty of Forestry, University of Phillipines, Los Banos
                <br/>Prof  Renato Reyes, Director for International Affairs, Central Luzon State University, Philippines

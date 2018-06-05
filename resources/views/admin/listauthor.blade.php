@@ -51,7 +51,7 @@
     @endif
 
     @if(isset($usr->application))
-      <td><strong><a href="{{ url("storage/abstract/".$usr->application->abstract) }}">Abstract</a></strong></td>
+      <td><strong><a href="{{ url("storage/abstract/".$usr->application->abstract) }}">{{ $usr->application->apptype->type}}</a></strong></td>
     @else
      <td></td>
     @endif
