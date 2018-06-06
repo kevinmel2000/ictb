@@ -23,6 +23,7 @@
 											<li><a href="{{ route('home') }}">My Registration</a></li>
 											<li><a href="{{ route('listauthor')}}">List author</a></li>
 
+											<li><a href="{{ route('listabstract')}}">List abstract</a></li>
 											<li><a href="{{ route('listpeserta')}}">List peserta</a></li>
 											<li><a  href="{{ route('logout') }}"
 											onclick="event.preventDefault();

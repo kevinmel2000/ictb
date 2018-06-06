@@ -20,6 +20,7 @@
 
               <table class="table table-striped">
   <thead>
+    <td><strong>No</strong></td>
     <td><strong>Registration ID</strong></td>
     <td><strong>Name</strong></td>
     <td><strong>Email</strong></td>
@@ -29,8 +30,10 @@
     <td><strong>Allergies</strong></td>
     <td><strong>Payment</strong></td>
   </thead>
+  <?php $count = 1;   ?>
   @foreach($user as $usr)
   <tr>
+    <td>{{ $count }}<?php $count++; ?></td>
     <td><strong>{{ $usr->registration_id }}</strong></td>
     <td><strong>{{ $usr->firstname.' '.$usr->lastname }}</strong></td>
     <td><strong>{{ $usr->email }}</strong></td>
@@ -43,7 +46,12 @@
 
     <td><strong>{{ $usr->student }}</strong></td>
     <td><strong>{{ $usr->allergies }}</strong></td>
-    <td><strong>{{ $usr->payment }}</strong></td>
+    
+      @if(empty($usr->paymentConfirmation))
+      <td>{{ $usr->payment }}</td>
+      @else
+      <td><a href="{{ url("storage/payment/".$usr->paymentConfirmation) }}"">{{ $usr->payment }}</a></td>
+      @endif
   </tr>
   @endforeach
   </table>

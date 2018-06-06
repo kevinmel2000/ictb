@@ -34,6 +34,7 @@ Route::group(['middleware' => ['payment']], function () {
 Route::group(['middleware' => ['admin']], function () {
     Route::get('/listpeserta', 'AdminController@peserta')->name('listpeserta');
 
+    Route::get('/listabstract', 'AdminController@abstracts')->name('listabstract');
     Route::get('/listauthor', 'AdminController@author')->name('listauthor');
 });
 
