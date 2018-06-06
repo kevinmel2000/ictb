@@ -91,6 +91,8 @@
                             <div class="row">
                                 <div class="ten columns">
                                   
+            		    	<label>Registration ID: <strong>{{ Auth::user()->registration_id }}</strong></label>
+            
                                 <label>Fullname: <strong>{{ $user->title->title.' '.$user->lastname.', '.$user->firstname }}</strong></label>
                                 
                                 <label>Registration Code: <strong>{{ $user->registration_id }}</strong></label>
@@ -139,8 +141,7 @@
 
                                 <label>Title: <strong>{{ $application->title }}</strong></label>
 
-                                <label>Abstract: <br/><strong>{{ $application->abstract }}</strong></label>
-
+      <label><strong><a href="{{ url("storage/abstract/".$application->abstract) }}">Abstract</a></strong></label>
                                 <label>Keywords: <br/><strong>{{ $application->keyword }}</strong></label>
                                 
                                 <label>Publication Type: <strong>{{ $application->publicationtype->type }}</strong></label>
@@ -154,8 +155,6 @@
                 </fieldset>
 @endif
 
-
-                @if($user->payment == NULL)
                 
                 <fieldset>
                             <legend><h6>Payment Information</h6></legend>
@@ -172,13 +171,19 @@
                                 @endif
                                 
                                 <strong>Total payment: {{ $currency.' '.number_format($proceeding + $participation) }}</strong>
-                                
+                                <br/>
+				<br/>
+				Should you need formal invoice, please contact <a href="mailto:bio-ictb@biotrop.org">bio-ictb@biotrop.org</a>
                             <!-- ------- -->                            
                         </div>
                     </div>
 
                     
                 </fieldset>
+		
+
+                @if($user->payment == NULL)
+
                 <form method="POST" action="{{ route('confirm') }}">
                 {{ csrf_field() }}
                 <input type="hidden" value="{{ $currency.' '.number_format($proceeding + $participation) }}" name="payment"/>

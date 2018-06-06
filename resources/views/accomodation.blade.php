@@ -50,7 +50,7 @@
                 <td >Superior</td>
                 <td >653,000</td>
                 <td >6.0 km</td>
-                <td >Jalan Raya Pajajaran Botani Square, Bogor 16127 Indonesia, Ph. +62 251 8345698 (<a href="http://ipbhotel.com/" target="_blank">http://ipbhotel.com/</a>)
+                <td >Jalan Raya Pajajaran Botani Square, Bogor 16127 Indonesia, Ph. +62 251 8345698 (<a href="https://www.ipbconventionhotel.com/" target="_blank">https://www.ipbconventionhotel.com/</a>)
                 </td>
               </tr>
               <tr>
@@ -85,11 +85,11 @@
               </tr>
               <tr>
                 <td><img src="images/hotels/horison_bogor.jpeg"></td>
-                <td ><strong>Horison Bogor Hotel</strong></td>
+                <td ><strong>D'Anaya Hotel</strong></td>
                 <td >Deluxe</td>
                 <td >620,000</td>
                 <td >5.5 km</td>
-                <td >Jl. Pakuan No. 7, Baranangsiang, Bogor 16143, Indonesia, Phone:+62 251 8390120 (<a href="http://horison.horison-group.com/bogor" target="_blank">http://horison.horison-group.com/bogor</a>)
+                <td >Jl. Pakuan No. 7, Baranangsiang, Bogor 16143, Indonesia, Phone:+62 251 8390120 (<a href="http://www.danayahotels.com/" target="_blank">http://www.danayahotels.com/</a>)
 </td>
               </tr>
               

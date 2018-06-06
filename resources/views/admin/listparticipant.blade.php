@@ -1,4 +1,4 @@
-@extends('layouts.newweb')
+@extends('layouts.newwebadmin')
 
 
 @section('content')
