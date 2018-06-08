@@ -136,7 +136,7 @@
       Keynote Addresses on
       <ul class="nobottommargin" style="margin-left:30px">
        <li><strong>Gains and Challenges of Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna.</strong><br/>
-        Dr Rosie Coney, The SSC-IUCN Chair of the Sustainable Use and Livelihood Specialist Group and Scientific Advisory Board of UN Secretary General
+        Prof. Dr. Mohamed Zakaria Hussin, Faculty of Forestry, UPM
         <br/>
       </li>
 

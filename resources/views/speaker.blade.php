@@ -43,18 +43,20 @@
                     </div>
                 </div>
                     </div>
-                      <!--
+                    
                     <div class="col-lg-3 col-md-6 bottommargin">
                         <div class="team">
-                            <div class="team-image">
-                                <img src="images/team/rosie.jpg" alt="Rosie Coney">
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-title"><h4>Dr Rosie Coney</h4><span>/ The SSC-IUCN Chair <small>of the Sustainable Use and Livelihood Specialist Group and Scientific Advisory Board of UN Secretary General</small></span></div>
-                            </div>
+                             <div class="team-image">
+                        <img src="images/team/mzakaria.jpg" alt="Prof. Dr. Mohamed Zakaria Hussin">
+                    </div>
+                    <div class="team-desc">
+                        <div class="team-title"><h4>Prof. Dr. Mohamed Zakaria Hussin</h4><span>/ Faculty of Forestry, UPM</span></div>
+
+                    </div>
                         </div>
                     </div>
-                  
+
+                    <!--
                     <div class="col-lg-3 col-md-6 bottommargin">
                         <div class="team">
                             <div class="team-image">
