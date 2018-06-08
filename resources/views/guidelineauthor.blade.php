@@ -52,33 +52,30 @@
          <strong>Detail</strong></th>
          <th><strong>Date</strong></th>
        </thead>
-       <tr>
-        <td>Call for abstracts</td>
-        <td>16 April – 25 June 2018 </td>
+     
+      <tr>
+        <td><strong>Call for, Submission and Selection of Extended Abstracts for Oral/Poster  Presentations</strong></td>
+        <td><strong>&nbsp;</strong></td>
       </tr>
       <tr>
-        <td>Announcement of accepted abstracts for oral and poster presentations</td>
-        <td>25 June 2018</td>
+        <td>Call  for extended  abstracts</td>
+        <td>16 May – 5 July 2018</td>
       </tr>
       <tr>
-        <td>Evaluation and Selection of Extended Abstracts </td>
-        <td>26 June - 24 July 2018 </td>
+        <td>Deadline for submission of extended abstracts</td>
+        <td>6 July 2018</td>
       </tr>
       <tr>
-        <td>Announcement of Accepted Extended Abstracts for Oral/Poster Presentations </td>
-        <td>25 July 2018</td>
+        <td>Evaluation and selection of extended abstracts </td>
+        <td>7 - 30 July 2018</td>
       </tr>
       <tr>
-        <td>Deadline for registration and payment for paper and poster presenters</td>
-        <td>15 September 2015</td>
+        <td>Announcement of accepted extended abstracts for oral/poster presentations</td>
+        <td>31 July 2018</td>
       </tr>
       <tr>
-        <td>Deadline for uploading oral presentation files</td>
-        <td>3 September 2018</td>
-      </tr>
-      <tr>
-        <td>Deadline for full paper submission</td>
-        <td> - </td>
+        <td>Submission of final versions of extended  abstracts for inclusion in the printing of the Conference Book of Abstracts</td>
+        <td>10 August 2018</td>
       </tr>
 
       <tr>
