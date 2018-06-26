@@ -96,18 +96,20 @@
 				<div class="heading-block center">
 					<h3><span>Partners</span></h3>
 				</div>
-				<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="false" data-nav="true" data-autoplay="2000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+				<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="true" data-nav="true" data-autoplay="2000" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-align-items="center" data-items-xl="6">
 					<div class="oc-item"><a target="_BLANK" href="https://clsu.edu.ph/"><img src="images/clients/clsu.png" alt="Central Luzon State University"></a></div>
 					<div class="oc-item"><a target="_BLANK" href="http://www.upm.edu.my"><img src="images/clients/upm.png" alt="University Putra Malaysia (UPM)"></a></div>
 					
 					<div class="oc-item"><a href="https://ipb.ac.id/"><img src="images/clients/ipb.png" alt="Institut pertanian Bogor"></a></div>
 					
 					<div class="oc-item"><a href="http://www.pertanian.go.id/"><img src="images/clients/pertanian.png" alt="Ministry of Agriculture of Republic of Indonesia"></a></div>
+					
+					<div class="oc-item"><a href="http://www.menlhk.go.id/"><img src="images/clients/klhk.png" alt="Ministry of Environment and Forestry of Republic of Indonesia"></a></div>
+					<div class="oc-item"><a href="https://id.fsc.org/id-id/"><img src="images/clients/fsc.png" alt="Forest Stewardship Council"></a></div>
 					{{--
 						<!--<div class="oc-item"><a href="https://aseanbiodiversity.org/"><img src="images/clients/asean biodiversity.png" alt="ASEAN Centre for Biodiversity"></a></div>
 					
 						
-					<div class="oc-item"><a href="http://www.menlhk.go.id/"><img src="images/clients/klhk.png" alt="Ministry of Environment and Forestry of Republic of Indonesia"></a></div>
 					
 					<div class="oc-item"><a href="https://www.iucn.org"><img src="images/clients/iucn.png" alt="International Union for Conservation of Nature and Natural Resources (IUCN)"></a></div>
 					<div class="oc-item"><a href="https://www.wwf.or.id/en/"><img src="images/clients/wwf.png" alt="World Wide Fund (WWF) Indonesia"></a></div>
@@ -127,7 +129,33 @@
 				<h2>Conference Speakers</h2>
 				<span>Hear from the experts</span>
 			</div>
-			<div class="col_one_third nobottommargin">
+
+			<div class="col_one_fourth nobottommargin">
+				<div class="team">
+					<div class="team-image">
+						<img src="images/team/mzakaria.jpg" alt="Prof. Dr. Mohamed Zakaria Hussin">
+					</div>
+					<div class="team-desc">
+						<div class="team-title"><h4>Prof. Dr. Mohamed Zakaria Hussin</h4><span>/ Faculty of Forestry, UPM</span></div>
+
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="col_one_fourth nobottommargin">
+				<div class="team">
+					<div class="team-image">
+						<img src="images/team/ani.jpg" alt="Dr Muladno">
+					</div>
+					<div class="team-desc">
+						<div class="team-title"><h4>Prof. Dr. Ir. Ani Mardiastuti, M.Sc</h4><span>/ Head of Ecology and Wildlife Management Division, <small>Department of Forest Resources Conservation and Ecotourism, Faculty of Forestry, IPB</small></span></div>
+					</div>
+				</div>
+			</div>
+			
+			
+		<div class="col_one_fourth nobottommargin">
 				<div class="team">
 					<div class="team-image">
 						<img src="images/team/chew.jpg" alt="Prof Alison Martin">
@@ -139,29 +167,20 @@
 					</div>
 				</div>
 			</div>
-			<div class="col_one_third nobottommargin">
-				<div class="team">
-					<div class="team-image">
-						<img src="images/team/ani.jpg" alt="Dr Muladno">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Prof. Dr. Ir. Ani Mardiastuti, M.Sc</h4><span>/ Head of Ecology and Wildlife Management Division, <small>Department of Forest Resources Conservation and Ecotourism, Faculty of Forestry, IPB</small></span></div>
-					</div>
-				</div>
-			</div>
 			
-			<div class="col_one_third nobottommargin col_last">
+		<div class="col_one_fourth nobottommargin col_last">
 				<div class="team">
 					<div class="team-image">
-						<img src="images/team/mzakaria.jpg" alt="Prof. Dr. Mohamed Zakaria Hussin">
+						<img src="images/team/campilan.jpg" alt="Dr Campilan Dindo">
 					</div>
 					<div class="team-desc">
-						<div class="team-title"><h4>Prof. Dr. Mohamed Zakaria Hussin</h4><span>/ Faculty of Forestry, UPM</span></div>
+						<div class="team-title"><h4>Dr. Campilan Dindo</h4><span>/ International Centre for Tropical Agriculture (CIAT), CGIAR</span></div>
 
 					</div>
 				</div>
 			</div>
 		
+
 			<div class="clear"></div>
 		</div>
 
@@ -247,10 +266,10 @@ The best presenter for oral presentation, the best paper and poster will be awar
 		editable: false,
 		eventLimit: true,
 		events: [{
-			title: 'Call for abstracts',
+			title: 'Call for extended abstracts',
 			url: '{{ route('guidelineauthor') }}',
 			start: '2018-05-01',
-			end: '2018-06-08'
+			end: '2018-07-05'
 		},
 		{
 			title: 'Registration starts',
@@ -258,14 +277,14 @@ The best presenter for oral presentation, the best paper and poster will be awar
 			start: '2018-05-16'
 		},
 		{
-			title: 'Abstract submissions deadline',
+			title: 'Extended abstract submissions deadline',
 			url: '{{ route('schedule') }}',
-			start: '2018-06-08'
+			start: '2018-07-05'
 		},
 		{
 			title: 'Accepted abstracts announcements',
 			url: '{{ route('schedule') }}',
-			start: '2018-06-25'
+			start: '2018-07-31'
 		},
 		{
 			title: 'Participants early bird registration deadline',
@@ -277,16 +296,7 @@ The best presenter for oral presentation, the best paper and poster will be awar
         	url: '{{ route('schedule') }}',
         	start: '2018-08-10'
         },
-        {
-        	title: 'Extended abstracts submission deadline',
-        	url: '{{ route('schedule') }}',
-        	start: '2018-08-10'
-        },
-        {
-        	title: 'Announcement for early bird registration and exhibitors',
-        	url: '{{ route('schedule') }}',
-        	start: '2018-08-13'
-        },
+        
         {
         	title: 'Deadline for registration and payment for paper and poster presenters',
         	url: '{{ route('schedule') }}',

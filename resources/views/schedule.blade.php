@@ -136,7 +136,7 @@
       Keynote Addresses on
       <ul class="nobottommargin" style="margin-left:30px">
        <li><strong>Gains and Challenges of Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna.</strong><br/>
-        Prof. Dr. Mohamed Zakaria Hussin, Faculty of Forestry, UPM
+        Prof Dr Mohamed Zakaria Hussin, Faculty of Forestry, Universiti Putra Malaysia
         <br/>
       </li>
 
@@ -149,9 +149,9 @@
           <li><strong>
            Socio-economic, Cultural, and Ethical Aspects in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna
          </strong><br/>
-         Prof Dr Clemens B.A. Wollny, International Livestock Research Institute
-       </li>
-
+         Dr Campilan  Dindo, International Centre for Tropical Agriculture (CIAT), CGIAR 
+         </li>
+<p><br/>Moderator: Dr Jess C. Fernandez, SEAMEO BIOTROP</p>
      </td>
    </tr>
    <tr>
@@ -166,18 +166,29 @@
     <td colspan="4">Paralel Session 1</td>
   </tr>
   <tr>
-    <td align="center"><strong>Sub-Theme 1</strong><br>
-    (Conference Hall)</td>
+    <td align="center"><strong>Sub-Theme 1<br>
+    (Conference Hall)</strong><p><br/>Moderator: 
+Dr. Hafandi bin Ahmad, Universiti Putra Malaysia
+</p></td>
     <td  align="center">
-      <strong>Sub-Theme 2<br/>(MIT-A)</strong>
+      <strong>Sub-Theme 2<br/>(MIT-A)</strong><p><br/>Moderator: 
+Dr. Awang Maharijaya, Institut Pertanian Bogor/SEAMEO BIOTROP
+</p>
     </td>
     <td  align="center">
-      <strong>Sub-Theme 3</strong><br>
-      (Jati Room)
+      <strong>Sub-Theme 3<br>
+      (Jati Room)</strong>
+      <p><br/>Moderator: 
+Prof. Renato Reyes, Central Luzon State University
+</p>
     </td>
     <td  align="center">
-      <strong>Sub-Theme 4</strong><br>
-      Matoa Room
+      <strong>Sub-Theme 4<br>
+      Matoa Room</strong>
+      <p><br/>
+      Moderator: 
+Prof. Bambang Purwantara, Institut Pertanian Bogor/SEAMEO BIOTROP
+</p>
     </td>
   </tr>
   <tr>
@@ -194,11 +205,18 @@
     <strong>Sub-Theme 1</strong><br>
     (Conference Hall)
   </td>
-  <td align="center"><strong>Sub-Theme 2</strong><br/>(MIT-A)</td>
+  <td align="center"><strong>Sub-Theme 2<br/>(MIT-A)</strong><p><br/>
+  Moderator: 
+Dr. Sofronio Kalaw, Central Luzon State University
+</p></td>
   <td align="center"><strong>Sub-Theme 3</strong><br>
   (Jati Room)</td>
   <td align="center"><strong>Sub-Theme 4</strong><br>
-    (Matoa Room)
+    (Matoa Room)<p><br/>
+    Moderator: 
+Dr. Impron,
+Institut Pertanian Bogor/SEAMEO BIOTROP
+</p>
   </td>
 </tr>
 <tr>
@@ -220,7 +238,7 @@
   <td colspan="4">Plenary Session 1:<br>
    Keynote Address on<br>
    <strong>Policies and Other Legal Frameworks in Conservation and Sustainable Use of Indigenous Tropical Flora and Fauna</strong><br>
- Representative from Ministry of Forestry and Environment of Republic of Indonesia</td>
+ Representative from Ministry of Forestry and Environment of Republic of Indonesia<p><br/>Moderator: Dr Zulhamsyah Imran, SEAMEO BIOTROP</p></td>
 </tr>
 <tr>
   <td valign="top">10.00 – 10.30</td>
@@ -228,9 +246,12 @@
 </tr>
 <tr>
   <td valign="top">10.30 – 12.00</td>
-  <td colspan="4" valign="top">Plenary Session 2:<br>
-   <strong>Panel Discussion on The Future Directions in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna</strong><br>
- Panelists: Waiting confirmation</td>
+  <td colspan="4" valign="top"><p>Plenary Session 2:<br>
+    <strong>Panel Discussion on The Future Directions in Conservation, Enhancement and Sustainable Use of Indigenous Tropical Flora and Fauna</strong><br><p>
+    Panelists:
+    <br/>1. Dr Mastur, National Committee for Indonesian Germ Plasms,   Ministry of Agriculture of Republic Indonesia<br>
+      2. Tony Sumampau, Taman Safari Indonesia<br>
+3. Expert from FSC Indonesia<br/>4. Dr. Evaristo Abella, Central Luzon State University</p><br/>Moderator:  Dr. Jess C. Fernandez, SEAMEO BIOTROP</td>
 </tr>
 <tr>
   <td valign="top">12.00 – 13.30</td>
