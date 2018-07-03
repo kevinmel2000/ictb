@@ -106,6 +106,8 @@
 					
 					<div class="oc-item"><a href="http://www.menlhk.go.id/"><img src="images/clients/klhk.png" alt="Ministry of Environment and Forestry of Republic of Indonesia"></a></div>
 					<div class="oc-item"><a href="https://id.fsc.org/id-id/"><img src="images/clients/fsc.png" alt="Forest Stewardship Council"></a></div>
+
+					<div class="oc-item"><a href="http://lipi.go.id/"><img src="images/clients/lipi.png" alt="Lembaga Ilmu Pengetahuan Indonesia"></a></div>
 					{{--
 						<!--<div class="oc-item"><a href="https://aseanbiodiversity.org/"><img src="images/clients/asean biodiversity.png" alt="ASEAN Centre for Biodiversity"></a></div>
 					
