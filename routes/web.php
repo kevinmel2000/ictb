@@ -26,8 +26,9 @@ Route::get('/summary', 'HomeController@summary')->name('summary');
 Route::post('/confirm', 'HomeController@confirm')->name('confirm');
 Route::post('/confirmpayment', 'HomeController@confirmPayment')->name('confirmPayment');
 
-    Route::get('/application', 'HomeController@application')->name('application');
+//Route::get('/application', 'HomeController@application')->name('application');
 Route::group(['middleware' => ['payment']], function () {
+	Route::get('/application', 'HomeController@applicationDisabled')->name('application');
 	Route::get('/information', 'HomeController@information')->name('information');
 });
 

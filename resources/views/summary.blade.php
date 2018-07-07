@@ -150,9 +150,10 @@
                             <label>Keywords: <br/><strong>{{ $application->keyword }}</strong></label>
 
                             <label>Publication Type: <strong>{{ $application->publicationtype->type }}</strong></label>
-
+			
+			 <!--
                             <a href="{{ route('application') }}">Edit Application</a>
-                            <!-- ------- -->                            
+                            ------- -->                            
                         </div>
                     </div>
 
