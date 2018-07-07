@@ -66,7 +66,7 @@
 
 
                                 <label>Extended Abstract</label>
-                                <span style="font-size:1em; color:#09F">Upload your extended abstract here, you will have the chance to edit the file until 25 June 2018</span>
+                                <span style="font-size:1em; color:#09F">Upload your extended abstract here, you will have the chance to edit the file until 10 August 2018</span>
 
       <a href="{{ route('download', 'abstracttemplate') }}" class="button button-3d button-green button-rounded button-medium">Download Extended Abstract Template</a>
       <p></p>
