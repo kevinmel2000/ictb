@@ -39,11 +39,6 @@
 			</div>
 
 			<div class="center topmargin-lg">
-				{{-- DISABE SUBMISSION
-				<a href="{{ route('guidelineauthor') }}" class="button button-3d button-red button-rounded button-xlarge">Call for Ext. Abstract</a>
-			
-				<span class="d-none d-md-inline-block"> - OR - </span>
-				--}}
 				<a href="{{ route('register') }}" class="button button-3d button-white button-light button-rounded button-xlarge">Register</a> 
 			</div>
 		</div>
@@ -110,6 +105,12 @@
 					<div class="oc-item"><a href="https://id.fsc.org/id-id/"><img src="images/clients/fsc.png" alt="Forest Stewardship Council"></a></div>
 
 					<div class="oc-item"><a href="http://lipi.go.id/"><img src="images/clients/lipi.png" alt="Lembaga Ilmu Pengetahuan Indonesia"></a></div>
+
+					<div class="oc-item"><a href="http://psau.edu.ph/"><img src="images/clients/psau.png" alt="Pampanga State Agricultural University"></a></div>
+
+					<div class="oc-item"><a href="http://www.nus.edu.sg/"><img src="images/clients/nus.png" alt="National University of Singapore"></a></div>
+
+					<div class="oc-item"><a href="https://ciat.cgiar.org/"><img src="images/clients/ciat.png" alt="International Center for Tropical Agriculture"></a></div>
 					{{--
 						<!--<div class="oc-item"><a href="https://aseanbiodiversity.org/"><img src="images/clients/asean biodiversity.png" alt="ASEAN Centre for Biodiversity"></a></div>
 					

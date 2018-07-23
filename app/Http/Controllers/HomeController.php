@@ -70,10 +70,7 @@ class HomeController extends Controller
         return view('application',compact("applicationType", "themes", "pubType", "application", "subtheme"));
     }
 
-    public function applicationDisabled(){
-            
-     return redirect()->route('home');
-    }
+   
 
 
 

@@ -49,11 +49,11 @@
       </tr>
       <tr>
         <td>Call  for extended  abstracts</td>
-        <td>16 May – 5 July 2018</td>
+        <td>16 May – <del>5 July</del> 16 July 2018</td>
       </tr>
       <tr>
         <td>Deadline for submission of extended abstracts</td>
-        <td>6 July 2018</td>
+        <td><del>6 July</del> 16 July 2018</td>
       </tr>
       <tr>
         <td>Evaluation and selection of extended abstracts </td>
