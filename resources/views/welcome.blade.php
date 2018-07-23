@@ -111,6 +111,10 @@
 					<div class="oc-item"><a href="http://www.nus.edu.sg/"><img src="images/clients/nus.png" alt="National University of Singapore"></a></div>
 
 					<div class="oc-item"><a href="https://ciat.cgiar.org/"><img src="images/clients/ciat.png" alt="International Center for Tropical Agriculture"></a></div>
+
+					<div class="oc-item"><a href="http://www.csu.edu.ph"><img src="images/clients/csu.png" alt="Cagayan State University"></a></div>
+
+					<div class="oc-item"><a href="http://www.burung.org"><img src="images/clients/burung.png" alt="Burung Indonesia"></a></div>
 					{{--
 						<!--<div class="oc-item"><a href="https://aseanbiodiversity.org/"><img src="images/clients/asean biodiversity.png" alt="ASEAN Centre for Biodiversity"></a></div>
 					

@@ -23,7 +23,9 @@
                                     <div class="three columns">
                                         <select name="cb_typeappli">
                                             @foreach ($applicationType as $app)
+                                            @if($app->id != 3)
                                             <option value="{{ $app->id }}">{{ $app->type }}</option>
+                                            @endif
                                             @endforeach
                                         </select>
 
