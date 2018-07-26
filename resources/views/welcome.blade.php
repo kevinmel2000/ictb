@@ -260,7 +260,7 @@ The best presenter for oral presentation, the best paper and poster will be awar
 
 <script>
 	jQuery(document).ready( function($){
-		var newDate = new Date(2018, 9, 20);
+		var newDate = new Date(2018, 8, 20);
 		$('#countdown-ex1').countdown({until: newDate});
 	});
 
