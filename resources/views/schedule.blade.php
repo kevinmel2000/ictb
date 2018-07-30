@@ -61,11 +61,11 @@
       </tr>
       <tr>
         <td>Announcement of accepted extended abstracts for oral/poster presentations</td>
-        <td>31 July 2018</td>
+        <td>6 August 2018</td>
       </tr>
       <tr>
         <td>Submission of final versions of extended  abstracts for inclusion in the printing of the Conference Book of Abstracts</td>
-        <td>10 August 2018</td>
+        <td>13 August 2018</td>
       </tr>
       <tr>
         <td><strong>Deadline for uploading oral presentation files</strong></td>
