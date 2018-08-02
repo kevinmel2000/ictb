@@ -279,13 +279,14 @@ public function confirmPayment(Request $request){
             switch($type){
                 case 1: $participation = 100;
                         break;
-                case 2: $participation = 150;
+                        //exhibitor
+                case 2: $participation = 200;
                         break;
-                case 3: $participation = 70;
+                case 3: $participation = 100;
             }
 
             if($isStudent){
-                $participation = 50;
+                $participation = 75;
             }
 
         }else{
@@ -296,13 +297,13 @@ public function confirmPayment(Request $request){
             switch($type){
                 case 1: $participation = 300000;
                         break;
-                case 2: $participation = 2000000;
+                case 2: $participation = 3000000;
                         break;
-                case 3: $participation = 250000;
+                case 3: $participation = 350000;
             }
 
             if($isStudent){
-                $participation = 100000;
+                $participation = 150000;
             }
         }
         $proceeding = 0;
